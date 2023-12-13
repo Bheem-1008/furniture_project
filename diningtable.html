@@ -1,0 +1,1212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dining Table Furniture </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="CSS/Furniture.css">
+    <link rel="stylesheet" href="CSS/bedroom.css">
+    <link rel="icon" type="icon" href="img/my-icon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('#mytab a').on('click', function (e) {
+                e.preventDefault();
+                $(this).tab('show');
+            })
+        }
+        )
+    </script>
+
+</head>
+
+<body>
+
+    <!-- ************************************ Header Section Start ***************************** -->
+
+    <div class="container-fluid" id="Header">
+        <div class="row ">
+            <div class="col">
+                <nav class="navbar justify-content-center">
+
+                    <a class="navbar-brand" href="http://127.0.0.1:5500/Furniture.html">
+                        <img src="img/royallogo-1.png">
+                    </a>
+
+                    <div class="logo">
+
+                        <a href="Furniture.html" class="logo-text">HOME</a>
+                        <a href="bedroom.html" class="logo-text">BEDROOM</a>
+                        <a href="diningtable.html" class="logo-text">DINING TABLE</a>
+                        <a href="oficechair.html" class="logo-text">OFFICE CHAIR</a>
+                        <a href="contact.html" class="logo-text">CONTACT</a>
+
+                    </div>
+
+                    <!-- #################### -->
+
+
+                    <form class="d-flex " role="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input class="control  me-2" type="search" placeholder="  Search" aria-label="Search">
+                    </form>
+
+                    <!-- modal button Start -->
+                    <div class="logo-icon">
+                        <button type="button" class="btn sign-up " data-bs-toggle="modal" data-bs-target="#myModal2">
+
+                            <span> <i class="fa-solid fa-user"></i> Sgin Up <i class="fa-solid fa-sort-down"></i></span>
+
+                        </button>
+                    </div>
+
+                    <!-- offcanvas Start -->
+
+                    <button class="btn  d-lg-none menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <div class="offcanvas offcanvas-end" id="demo">
+                        <div class="offcanvas-header">
+                            <img src="img/royallogo-1.png">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="modal-body">
+
+                                <div class="offcanvas-line">
+                                    <a href="Furniture.html"> HOME</a>
+                                </div>
+
+                                <div class="offcanvas-line">
+                                    <a href="bedroom.html"> BEDROOM</a>
+                                </div>
+
+                                <div class="offcanvas-line">
+                                    <a href="diningtable.html">DINING TABLE</a>
+                                </div>
+
+                                <div class="offcanvas-line">
+                                    <a href="oficechair.html">OFFICE CHAIR</a>
+                                </div>
+
+                                <div class="offcanvas-line">
+                                    <a href="contact.html">CONTACT</a>
+                                </div>
+
+                            </div>
+
+                            <!-- offcanvas start -->
+
+                            <button type="button" class="btn sign-up-phone btn-light" data-bs-toggle="modal"
+                                data-bs-target="#myModal2">
+                                <i class="fa-solid fa-user"></i> <span>SginUp</span><i
+                                    class="fa-solid fa-sort-down"></i>
+                            </button>
+
+                            <!-- offcanvas end -->
+
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title"><i class="fa-solid fa-user"></i> Login & Signup</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <form method="post">
+                        <div class="mb-3 mt-3">
+                            <div class="form-text">
+                                <p>Username or email address</p>
+                            </div>
+                            <input type="text" class="form-control" id="uname" required>
+
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-text">
+                                <p>Password <a href="" class="forget">
+                                        Forget Password?
+                                    </a>
+                                </p>
+                            </div>
+                            <input type="password" class="form-control" id="pwd" name="pswd" required>
+
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="form-check mb-3">
+
+                            <button type="submit" class="btn btn-primary submit-icon">Sign in</button>
+
+                            <a href="signup.html" class="sign-2">
+                                <p>Sign up</p>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- modal end-->
+
+    <!-- The offcanvas -->
+    <div class="modal" id="myModal2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title"><i class="fa-solid fa-user"></i> Login & Signup</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <form method="post">
+                        <div class="mb-3 mt-3">
+                            <div class="form-text">
+                                <p>Username or email address</p>
+                            </div>
+                            <input type="text" class="form-control" id="uname" required>
+
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-text">
+                                <p>Password <a href="" class="forget">
+                                        Forget Password?
+                                    </a>
+                                </p>
+                            </div>
+                            <input type="password" class="form-control" id="pwd" name="pswd" required>
+
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="form-check mb-3">
+
+                            <button type="submit" class="btn btn-primary submit-icon">Sign in</button>
+
+                            <a href="signup.html" class="sign-2">
+                                <p>Sign up</p>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- offcanvas end -->
+
+    <!-- *************************** Header Section end *********************** -->
+
+    <!-- *************************** Banner Section Start *********************** -->
+
+    <div class="container-fluid" id="banner-box">
+        <div class="row py-3">
+            <div class="col">
+                <a href="bedroom.html">
+                    <img src="img/category_banner_20231018081916.jpg" alt="" class="d-block w-100">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- *************************** Banner Section End *********************** -->
+    <br><br><br>
+    <!-- ********************* Best products Section Starts *************************** -->
+
+    <div class="container-fluid" id="Products">
+        <div class="row py-5">
+            <div class="col-3" id="bedroom">
+                <ul class="nav nav-pills flex-column" id="mytab-1">
+                    <h 5>Filters</h5>
+                        <hr>
+
+
+                        <li class="nav-item">
+                            <a class="dropdown-toggle product-button active" data-bs-toggle="pill" href="#home">Dining
+                                Tables & Sets
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="dropdown-toggle" data-bs-toggle="pill" href="#s">Furniture</a>
+
+                        </li>
+
+                        <!-- *************** Price ************* -->
+
+                        <li class="price-text">
+                            <label for="customRange1" class="form-label">PRICE</label>
+                            <input type="range" class="form-range" id="customRange1">
+
+
+                            <div class="btn-group">
+                                <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Min.
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Min</a></li>
+                                    <li><a class="dropdown-item" href="#">500</a></li>
+                                    <li><a class="dropdown-item" href="#">1000</a></li>
+                                    <li><a class="dropdown-item" href="#">2000</a></li>
+                                    <li><a class="dropdown-item" href="#">4000</a></li>
+                                    <li><a class="dropdown-item" href="#">6000</a></li>
+                                </ul>
+                            </div>
+
+                            <span>To</span>
+
+
+                            <div class="btn-group min-price">
+                                <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    3000 <i class="fa-solid fa-plus"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">200</a></li>
+                                    <li><a class="dropdown-item" href="#">500</a></li>
+                                    <li><a class="dropdown-item" href="#">1000</a></li>
+                                    <li><a class="dropdown-item" href="#">2000</a></li>
+                                    <li><a class="dropdown-item" href="#">4000</a></li>
+                                    <li><a class="dropdown-item" href="#">6000</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- *************** Price end ************* -->
+                        <br>
+                        <!-- *************** brand  ************* -->
+                        <li>
+                            <div class="btn-group">
+                                <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <samp> BRAND</samp>
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            24x7emall
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            3D INDIA
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            A ONE SHOPPE
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            A Walls Dream
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            Luxury
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            Adonai
+                                        </label>
+                                    </div>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- *************** Brand end************* -->
+
+                        <!-- *************** offers ************* -->
+
+                        <li>
+                            <div class="btn-group">
+                                <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <samp> OFFERS</samp>
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            No Cost EMI
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            Sprecia Price
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            Buy More ,Save More
+                                        </label>
+                                    </div>
+
+                                </ul>
+                            </div>
+                        </li>
+
+                        <!-- *************** offers ************* -->
+                        <hr>
+                        <!-- *************** ratings ************* -->
+
+                        <li>
+                            <div class="btn-group">
+                                <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <samp> CUSTOMER RATINGS</samp>
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            4 <i class="fa-solid fa-star"></i> & above
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            3 <i class="fa-solid fa-star"></i> & above
+                                        </label>
+                                    </div>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- *************** ratings ************* -->
+                        <hr>
+                        <!-- *************** discount ************* -->
+
+                        <li>
+                            <div class="btn-group">
+                                <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <samp>DISCOUNT</samp>
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            80% or more
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            70% or more
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            60% or more
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            50% or more
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            40% or more
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            No Free
+                                        </label>
+                                    </div>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- *************** discount end ************* -->
+                        <hr>
+                        <!-- *************** avalilatlity ************* -->
+
+                        <li>
+                            <div class="btn-group">
+                                <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <samp> AVAILABILITY</samp>
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            Inlide Out of Stock
+                                        </label>
+                                    </div>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- *************** avalilatlity  end************* -->
+                        <hr>
+                        <!-- *************** GST ************* -->
+
+                        <li>
+                            <div class="btn-group">
+                                <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+
+                                    <samp>GST INVOICE AVAILABLE</samp>
+                                </button>
+
+                                <ul class="dropdown-menu">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            GST Invoice Available
+                                        </label>
+                                    </div>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- *************** GST end ************* -->
+                </ul>
+            </div>
+
+            <!-- ############################## Dining Tables & Sets start   **************** -->
+
+            <div class="tab-content col-9" id="mytabcontent">
+                <div id="home" class="container tab-pane fade show active fur-text">
+                    <div class="row row-cols-lg-4">
+
+                        <div class="col Product-icon">
+                            <a href="diningbuy.html" class="Best-product">
+                                <img src="img/similar-table (1).webp">
+                            </a>
+
+                            <a href="diningbuy.html">
+                                <h5>Wood affair wooden dining table</h5>
+                                <span>Finish Color-walnut,DIY(Do-it-Yourself)</span><br>
+                                <spna>5.9<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>2,688
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/deningteble (2).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>ahree ganesh art solid 4 seater Dining table</h5>
+                                <span>Finish Color-Natural Finish</span><br>
+                                <spna>3.9<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>819
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/deningteble (1).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>wood affair solid wood 4 seater dining tabke</h5>
+                                <span>Finish Color-Natural Finish</span><br>
+                                <spna>3.8<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>14,498
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/similar-table (4).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>kendalwood furniture premium dining room </h5>
+                                <span>Finish Color-Walnut finish,Diy(Do-it-Youself)</span>
+                                <spna>4.3<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>4,699
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/similar-table (5).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>wood affair premium Dining room set</h5>
+                                <span>Finish Color-TEAK FINIAH</span><br>
+                                <spna>3.8<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>1,630
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/table-dining (8).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>A3 BOX Ws-901-4SET Wooden Wall Shelf</h5>
+                                <span>Nubmer of Shelves-4,Brown</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>456
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/GST-table (1).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>A3 BOX Ws-901-4SET Wooden Wall Shelf</h5>
+                                <span>Nubmer of Shelves-4,Brown</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>347
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/GST-table (18).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>A3 BOX Ws-901-4SET Wooden Wall Shelf</h5>
+                                <span>Nubmer of Shelves-4,Brown</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>1009
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/table-dining (4).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>A3 BOX Ws-901-4SET Wooden Wall Shelf</h5>
+                                <span>Nubmer of Shelves-4,Brown</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>987
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/GST-table (17).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>A3 BOX Ws-901-4SET Wooden Wall Shelf</h5>
+                                <span>Nubmer of Shelves-4,Brown</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>765
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/table-dining (6).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>A3 BOX Ws-901-4SET Wooden Wall Shelf</h5>
+                                <span>Nubmer of Shelves-4,Brown</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>654
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/table-dining (7).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>A3 BOX Ws-901-4SET Wooden Wall Shelf</h5>
+                                <span>Nubmer of Shelves-4,Brown</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>4322
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/table-dining (8).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>A3 BOX Ws-901-4SET Wooden Wall Shelf</h5>
+                                <span>Nubmer of Shelves-4,Brown</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>231
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/table-dining (9).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>A3 BOX Ws-901-4SET Wooden Wall Shelf</h5>
+                                <span>Nubmer of Shelves-4,Brown</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>343
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/roomstyle (3).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Khamma Ghanni Handicrafts Wooden Key Holder for Wall </h5>
+                                <span>7 Hooks,Brown</span><br>
+                                <spna>1.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>149
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/roomstyle (4).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Fraglite Lemon Refill</h5>
+                                <span>1 Units </span><br>
+                                <spna>1.0<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>40
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+                <!-- ##############################  bed room end **************** -->
+
+                <!-- #####################################  furniture sofa *******************-->
+
+                <div id="s" class="container tab-pane fade ">
+                    <div class="row row-cols-lg-4">
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/GST-table (1).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor </h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/GST-table (2).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor </h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/GST-table (3).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor </h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/GST-table (4).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor </h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/GST-table (5).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor </h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/GST-table (6).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor </h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/GST-table (7).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor </h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/GST-table (8).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor </h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/GST-table (9).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor </h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/GST-table (10).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor </h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/GST-table (11).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor </h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/GST-table (12).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor </h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/GST-table (13).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor </h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/GST-table (14).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor </h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/GST-table (15).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor </h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/GST-table (16).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor </h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- ##################################### furniture end *******************-->
+            </div>
+        </div>
+    </div>
+
+    <!-- ********************* Best products Section end *************************** -->
+
+
+    <!-- ********************* sililar product *************************** -->
+
+    <div class="container-fluid" id="similar">
+        <div class="div">
+            <h2>More to Discover</h2>
+        </div>
+        <div class="row row-cols-lg-5 row-cols-sm-2">
+
+            <div class="col Product-icon simi">
+                <a href="" class="Best-product">
+                    <img src="img/diningtable-4.webp">
+                </a>
+
+                <a href="">
+                    <h5>Waywood Preminum Dining</h5>
+                    <span>Finish Color-Brown,DIY(Do-it-Yourself)</span>
+                    <p><i class="fa-solid fa-indian-rupee-sign"></i>15,660
+                        <button class="buy">BUY NOW</button>
+                    </p>
+                </a>
+            </div>
+
+            <div class="col Product-icon simi">
+                <a href="" class="Best-product">
+                    <img src="img/deningtable-5.webp">
+                </a>
+
+                <a href="">
+                    <h5> Wood Seater Dining Table</h5>
+                    <span>Finish Color- NATURAL,pre-assembled</span>
+                    <p><i class="fa-solid fa-indian-rupee-sign"></i>23,699
+                        <button class="buy">BUY NOW</button>
+                    </p>
+                </a>
+            </div>
+
+            <div class="col Product-icon simi">
+                <a href="" class="Best-product">
+                    <img src="img/deningteble (6).webp">
+                </a>
+
+                <a href="">
+                    <h5>Angel Furnitre Foldable Solid</h5>
+                    <span>Finish Color-Honey Finish, Pre-assembled</span>
+                    <p><i class="fa-solid fa-indian-rupee-sign"></i>12,490
+                        <button class="buy">BUY NOW</button>
+                    </p>
+                </a>
+            </div>
+
+            <div class="col Product-icon simi">
+                <a href="" class="Best-product">
+                    <img src="img/deningteble (7).webp">
+                </a>
+
+                <a href="">
+                    <h5>SPACEWOOD Engineered</h5>
+                    <span>Finish Color-BROWN,DIY(Do-it-Yourself)</span>
+                    <p><i class="fa-solid fa-indian-rupee-sign"></i>1,932
+                        <button class="buy">BUY NOW</button>
+                    </p>
+                </a>
+            </div>
+
+            <div class="col Product-icon simi">
+                <a href="" class="Best-product">
+                    <img src="img/deningteble (8).webp">
+                </a>
+
+                <a href="">
+                    <h5>Supreme Marina Brown Table </h5>
+                    <span>Finish Color-Brown,DIY(Do-it-Yourself)</span>
+                    <p><i class="fa-solid fa-indian-rupee-sign"></i>2,912
+                        <button class="buy">BUY NOW</button>
+                    </p>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <!-- ********************* sililar product end *************************** -->
+
+
+    <!-- ***************************** Footer Section Start *************************** -->
+    <div class="container-fluid" id="footer">
+        <div class="row">
+
+            <div class=" col footer-text">
+                <ul style="list-style: none;">
+                    <th>Contact Us</th>
+                    <li>Phone: 09544644999</li>
+                    <li>Need help or have a question?</li>
+                    <li>Contact us at: ingo@rotalfurniturnitureonline.in</li>
+                    <li>Royal tower Areacode Road, Mukkam, Calicut,, Kozhikode (Calicut),India,673602</li>
+                </ul>
+            </div>
+
+            <div class="col footer-text">
+                <ul>
+                    <th>Company</th>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="location.html">Store Locations</a></li>
+                    <li><a href="signup.html">SignUp...............................................</a></li>
+                </ul>
+            </div>
+
+            <div class="col footer-text">
+                <ul>
+                    <th>Infomation</th>
+                    <li><a href="delifry.html">Delivery Information</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="Refund.html">Refund & Cancellation Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 footer-text1">
+                <ul style="list-style: none;">
+                    <li class="footer-link">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://about.twitter.com/en"><i class="fa-brands fa-twitter"></i></a>
+                        <small> Copyright © 2023 - longshore ventures INC</small>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ***************************** Footer Section end *************************** -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

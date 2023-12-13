@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Information</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="CSS/Furniture.css">
+    <link rel="stylesheet" href="CSS/bedroom.css">
+    <link rel="stylesheet" href="CSS/about.css">
+    <link rel="icon" type="icon" href="img/my-icon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+
+<body class="bg-">
+    <!-- ************************************ Header Section Start ***************************** -->
+
+    <div class="container-fluid" id="Header">
+        <div class="row ">
+            <div class="col">
+                <nav class="navbar justify-content-center">
+
+                    <a class="navbar-brand" href="http://127.0.0.1:5500/Furniture.html">
+                        <img src="img/royallogo-1.png">
+                    </a>
+
+
+                    </h6>
+
+                    <div class="logo">
+
+                        <a href="Furniture.html" class="logo-text">HOME</a>
+                        <a href="bedroom.html" class="logo-text">BEDROOM</a>
+                        <a href="diningtable.html" class="logo-text">DINING TABLE</a>
+                        <a href="oficechair.html" class="logo-text">OFFICE CHAIR</a>
+                        <a href="contact.html" class="logo-text">CONTACT</a>
+
+                    </div>
+
+                    <!-- #################### -->
+
+                    <form class="d-flex " role="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input class="control  me-2" type="search" placeholder="  Search" aria-label="Search">
+                    </form>
+
+                    <!-- modal button Start -->
+                    <div class="logo-icon">
+                        <button type="button" class="btn sign-in " data-bs-toggle="modal" data-bs-target="#myModal">
+                            <span> <i class="fa-solid fa-user"></i> Sign in <i class="fa-solid fa-sort-down"></i></span>
+
+                        </button>
+                    </div>
+
+
+                    <!-- offcanvas Start -->
+
+                    <button class="btn d-lg-none menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <div class="offcanvas offcanvas-end" id="demo">
+                        <div class="offcanvas-header">
+                            <img src="img/furniture-logo-design-new4-removebg-preview.png">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="modal-body">
+
+                                <div class="offcanvas-line">
+                                    <a href="Furniture.html"> HOME</a>
+                                </div>
+
+                                <div class="offcanvas-line">
+                                    <a href="bedroom.html"> BEDROOM</a>
+                                </div>
+
+                                <div class="offcanvas-line">
+                                    <a href="diningtable.html">DINING TABLE</a>
+                                </div>
+
+                                <div class="offcanvas-line">
+                                    <a href="oficechair.html">OFFICE CHAIR</a>
+                                </div>
+
+                                <div class="offcanvas-line">
+                                    <a href="contact.html">CONTACT</a>
+                                </div>
+
+                            </div>
+
+                            <!-- offcanvas start -->
+
+                            <button type="button" class="btn sign-up-phone btn-light" data-bs-toggle="modal"
+                                data-bs-target="#myModal1">
+                                <i class="fa-solid fa-user"></i> <span>Sgin Up</span><i
+                                    class="fa-solid fa-sort-down"></i>
+                            </button>
+
+                            <!-- offcanvas end -->
+
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title"><i class="fa-solid fa-user"></i> Login & Signup</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <form method="post">
+                        <div class="mb-3 mt-3">
+                            <div class="form-text">
+                                <p>Username or email address</p>
+                            </div>
+                            <input type="text" class="form-control" id="uname" required>
+
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-text">
+                                <p>Password
+                                    <a href="" class="forget">
+                                        Forget Password?
+                                    </a>
+                                </p>
+                            </div>
+                            <input type="password" class="form-control" id="pwd" name="pswd" required>
+
+                            <div class="invalid-feedback">Please fill out this field.</div><br>
+
+                            <input type="checkbox" name="c1"> Remember Me
+                        </div>
+                        <div class="form-check mb-3">
+
+                            <button type="submit" class="btn btn-primary text-light submit-icon ">Log in</button>
+
+                            <a href="signup.html" class="sign-2">
+                                <p>Sign up</p>
+                            </a>
+
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- modal end-->
+
+    <!-- The offcanvas -->
+    <div class="modal" id="myModal1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title"><i class="fa-solid fa-user"></i> Login & Signup</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <form method="post">
+                        <div class="mb-3 mt-3">
+                            <div class="form-text">
+                                <p>Username or email address</p>
+                            </div>
+                            <input type="text" class="form-control" id="uname" required>
+
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-text">
+                                <p>Password <a href="" class="forget">
+                                        Forget Password?
+                                    </a>
+                                </p>
+                            </div>
+                            <input type="password" class="form-control" id="pwd" name="pswd" required>
+
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="form-check mb-3">
+
+                            <button type="submit" class="btn btn-primary submit-icon">Log in</button>
+
+                            <a href="signup.html" class="sign-2">
+                                <p>Sign up</p>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- offcanvas end -->
+
+    <!-- *************************** Header Section end *********************** -->
+
+    <!-- ********************** about text ***** -->
+    <br><br><br><br><br>
+    <div class="container text">
+        <h1>Terms & Conditions</h1><br><br>
+
+        <h4>YOUR ACCEPTANCE OF THIS AGREEMENT :</h4>
+        <small>This is an agreement between you ("you" or "your") and Royalfurniture.com, that governs your use of the
+            services offered by Royalfurniture.com (a product of Hare Krishna Furnishing Pvt. Ltd.) through its website
+            www.Royalfurniture.com, mobile site, applications for iOS, Android, Windows operating system, telephone,
+            SMS, WAP or any other medium using which Royalfurniture.com may provide the services (collectively "Media"
+            ). When you access or use any of the content and services you agree to be bound by these Terms and
+            Conditions ("Terms").
+        </small>
+        <p>CHANGES : We may periodically change the Terms & Conditions on the Site without notice, and you are
+            responsible for checking these Terms and conditions periodically for revisions. All amended Terms and
+            conditions become effective upon our posting to the Site, and any use of the site after such revisions have
+            been posted signifies your consent to the changes.</p>
+
+        <h4>HOW YOU MAY USE OUR MATERIALS :</h4>
+        <small>We use a diverse range of information, text, photographs, designs, graphics, images, sound and video
+            recordings, animation, content, advertisement and other materials and effects (collectively "Materials") for
+            the services offered to you. We provide the Material through the Media FOR YOUR PERSONAL AND NON-COMMERCIAL
+            USE ONLY.
+        </small>
+
+        <h4>Product Policy</h4>
+        <small>The product shown in the product image is a reference product and the actual product can look different
+            from the one shown in the image due to various factors like lighting used in product image, wood's texture,
+            product polish, etc. There may be a slight variation in finish between the actual product and the product
+            images which are being displayed on our Mobile Apps, website and other digital media.</small>
+        <p>HOW WE MAY USE INFORMATION YOU PROVIDE TO US : Do not send us any confidential or proprietary information.
+            Except for any personally identifiable information that we agree to keep confidential as provided in our
+            Privacy Policy, any material, including, but not limited to any feedback, data, answers, questions,
+            comments, suggestions, ideas or the like, which you send to us will be treated as being non-confidential and
+            non proprietary. We assume no obligation to protect confidential or proprietary information (other than
+            personally identifiable information) from disclosure and will be free to reproduce, use, and distribute the
+            information to others without restriction. We will also be free to use any ideas, concepts, know-how or
+            techniques contained in information that you send us for any purpose whatsoever including but not limited to
+            developing, manufacturing and marketing products and services incorporating such information.</p>
+        <p>Any information/content in relation to your business or otherwise shall be submitted by you only and only if
+            you are: - Undisputed legal owner of said business.
+        </p>
+
+        <h4>ADVERTISING :</h4>
+        <small>You acknowledge and agree that Royalfurniture.com to place advertisement on services offered to you. The
+            manner, mode and extent of advertising by Royalfurniture.com on the Services are subject to change without
+            specific notice to you.
+        </small>
+
+        <h4>PRIVACY POLICY:</h4>
+        <small>Royalfurniture.com is committed to protecting the privacy and confidentiality of any personal information
+            that it may request and receive from its clients, business partners and other users of the Website. To read
+            our privacy policy statement regarding such personal information please refer PRIVACY POLICY
+        </small>
+
+        <h4>CONTENT DISCLAIMER :</h4>
+        <small>Royalfurniture.com communicates information provided and created by advertisers, content partners,
+            software developers, publishers, marketing agents, employees, users, resellers and other third parties.
+            While every attempt has been made to ascertain the authenticity of the content however Royalfurniture.com
+            has no control over the accuracy of such information on our web site, and content may include technical
+            inaccuracies or typographical errors, and we make no guarantees, nor can we be responsible for any such
+            information, including its authenticity, currency, content, quality, copyright compliance or legality, or
+            any resulting loss or damage. Further, we are not liable for any kind of damages, losses or action arising
+            directly or indirectly, due to access and/or use of the content or/and services including but not limited to
+            content based decisions resulting in loss of data, revenue, profits, property, and infection by viruses
+            etc.</small>
+
+        <p>All of the data on products and promotions including but not limited to, the prices and the availability of
+            any product or service or any feature thereof, is subject to change without notice by the party providing
+            the product or promotion. You should use discretion while using the content.</p>
+        <p>Royalfurniture.com reserves the right, in its sole discretion and without any obligation, to make
+            improvements to, or correct any error or omissions in, any portion of the content and services. Where
+            appropriate, we will endeavor to update information listed on the Website on a timely basis, but shall not
+            be liable for any inaccuracies.</p>
+        <p>All rights, title and interest including trademarks and copyrights in respect of the domain name and content
+            are reserved with Royalfurniture.com Users are permitted to read, print or download text, data and/or
+            graphics from the Website or any other Media for their personal use only. Unauthorized access, reproduction,
+            redistribution, transmission and/or dealing with any information contained in the content and services in
+            any other manner, either in whole or in part, are strictly prohibited, failing which strict legal action
+            will be initiated against such users.</p>
+        <p>Links to external Internet sites may be provided within the content and/or services on Website as a
+            convenience to users. The listing of an external site does not imply endorsement of the site by
+            Royalfurniture.com or its affiliate's Royalfurniture.com does not make any representations regarding the
+            availability and performance of its content or any of the external websites to which we provide links. When
+            you click on advertiser banners, sponsor links, or other external links from the Website or other Media,
+            your browser automatically may direct you to a new browser window that is not hosted or controlled by
+            Royalfurniture.com.</p>
+        <p>Royalfurniture.com and its affiliates are not responsible for the content, functionality, authenticity or
+            technological safety of these external sites. We reserve the right to disable links to or from third-party
+            sites to any of our Media, although we are under no obligation to do so. This right to disable links
+            includes links to or from advertisers, sponsors, and content partners that may use our Marks as part of a
+            co-branding relationship.</p>
+        <p>Some external links may produce information that some people find objectionable, inappropriate, or offensive.
+            We are not responsible for the accuracy, relevancy, copyright compliance, legality, or decency of material
+            contained in any externally linked websites, in this respect you use the services at your own risk. We do
+            not fully screen or investigate business listing websites before or after including them in directory
+            listings that become part of the Materials on our web site, and we make no representation and assume no
+            responsibility concerning the content that third parties submit to become listed in any of these
+            directories.</p>
+        <p>Royalfurniture.com also reserves the right to impose/change the access regulations of the web site (media),
+            whether in terms of access fee, timings, equipment, access restrictions or otherwise, which shall be posted
+            from time to time under these terms and conditions. It is the responsibility of users to refer to these
+            terms and conditions each time they use the services.</p>
+        <p>While every attempt has been made to ascertain the authenticity of the content, Royalfurniture.com is not
+            liable for any kind of damages, losses or action arising directly or indirectly, due to access and/or use of
+            the content including but not limited to any decisions based on content resulting in loss of data, revenue,
+            profits, property, infection by viruses etc.
+        </p>
+
+        <h4>WARRANTY DISCLAIMER :</h4>
+        <small>Please remember that any provider of goods or services is entitled to register with Royalfurniture.com
+            does not examine whether the advertisers are good, reputable or quality sellers of goods / service
+            providers. You must satisfy yourself about all relevant aspects prior to availing of the terms of service.
+            Royalfurniture.com has also not negotiated or discussed any terms of engagement with any of the advertisers.
+            The same should be done by you. Purchasing of goods or availing of services from advertisers shall be at
+            your own risk.</small>
+        <p>We do not investigate, represent or endorse the accuracy, legality, legitimacy, validity or reliability of
+            any products, services, deals, coupons or other promotions or materials, including advice, ratings, and
+            recommendations contained on, distributed through, or linked, downloaded or accessed from the web site
+            (Media).
+        </p>
+        <p>References that we make to any names, marks, products or services of third parties or hypertext links to
+            third party sites or information do not constitute or imply our endorsement, sponsorship or recommendation
+            of the third party, of the quality of any product or service, advice, information or other materials
+            displayed, purchased, or obtained by you as a result of an advertisement or any other information or offer
+            in or in connection with the web site (Media).</p>
+        <p>Royalfurniture.com disclaims any and all warranties to the fullest extent of the Law, including any
+            warranties for any information. Good, or services, obtained through, advertised or received through any
+            links provided by or through the website(Media) some countries or other jurisdictions do not allow the
+            exclusion of implied warranties, so the above exclusion may not apply to you. You may also have other Rights
+            that vary from Country and jurisdiction to jurisdiction.
+        </p>
+
+        <h4>LIMITATION OF LIABILITY :</h4>
+        <small>In no event shall Royalfurniture.com be liable to any user on account of such user's use, misuse or
+            reliance on the website for any damage whatsoever, including direct, special, punitive, indirect,
+            consequential or incidental damage or damage for loss of profit, revenue, use, or data whether brought in
+            warranty, contract, intellectual property infringement, TORT (including Negligence) or other theory, even of
+            Royalfurniture.com is aware of or have been advised of the possibility of such damage, arising out of or
+            connected with use (or inability to use) or performance of website (Media), the material on the internet
+            generally, or the use (or inability to use), reliance upon the performance of any material contained in or
+            access from any medium\Media. Royalfurniture.com does not assume any legal liability or responsibility for
+            the accuracy, completeness, or usefulness of any information, apparatus, products or process disclosed on
+            the website or other material accessible from the website.</small>
+        <p>Royalfurniture.com is not responsible for any problems or technical malfunction of any network or lines,
+            computer on-line-systems, servers or providers, computer equipment, software, failure of e-mail or players
+            on account of technical problems or traffic congestion on the internet or at any web site or combination
+            thereof, including injury or damage to you, users and/or members or to any other person's computer related
+            to or resulting from participating or downloading materials in connection with the Royalfurniture.com web
+            site and/or in connection with the Royalfurniture.com services and information.
+        </p>
+
+        <h4>MISCELLANEOUS :</h4>
+        <small>These Terms will be governed by and construed in accordance with the Indian laws, without giving effect
+            to its conflict of law's provisions or your actual state or country of residence, and you agree to submit to
+            personal jurisdiction in India. You agree to exclude, in its entirety, the application to these Terms of the
+            United Nations Convention on Contracts for the International Sale of Goods. You are responsible for
+            compliance with applicable laws. If for any reason a court of competent jurisdiction finds any provision or
+            portion of the Terms to be unenforceable, the remainder of the Terms will continue in full force and effect.
+            These Terms constitute the entire agreement between us and supersedes and replaces all prior or
+            contemporaneous understandings or agreements, written or oral, regarding the subject matter of these Terms.
+            Any waiver of any provision of the Terms will be effective only if in writing and signed by you and
+            Royalfurniture.com.
+        </small>
+
+        <p>Royalfurniture.com reserves the right to investigate complaints or reported violations of these Terms and to
+            take any action we deem necessary and appropriate. Such action may include reporting any suspected unlawful
+            activity to law enforcement officials, regulators, or other third parties. In addition, we may take action
+            to disclose any information necessary or appropriate to such persons or entities relating to user profiles,
+            e-mail addresses, usage history, posted materials, IP addresses and traffic information. Royalfurniture.com
+            reserves the right to seek all remedies available at law and in equity for violations of these Terms.</p>
+
+        <p>Royalfurniture.com may use searches you undertake, the pages you view, your browser type, IP address,
+            requested URL, referring URL, and timestamp information to gather broad demographic information. We may use
+            this information to provide you state of art services.
+        </p>
+
+    </div>
+
+
+    <!-- ***************************** similar products ****************************-->
+
+    <div class="container-fluid" id="similar">
+        <div class="div" ><h2>More to Discover</h2></div>
+              
+            <div class="row row-cols-lg-5 row-cols-sm-2">
+    
+                <div class="col Product-icon simi">
+                    <a href="" class="Best-product">
+                        <img src="img/bag-cover.webp">
+                    </a>
+    
+                    <a href="">
+                        <h5>Devigue XXXL Tear Drop</h5>
+                        <span>Tan, Black</span>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i>854
+                            <button class="buy">BUY NOW</button>
+                        </p>
+                    </a>
+                </div>
+    
+                <div class="col Product-icon simi">
+                    <a href="" class="Best-product">
+                        <img src="img/officechair (1).webp">
+                    </a>
+    
+                    <a href="">
+                        <h5>SAVYA HOME Office Chair |</h5>
+                        <span>Red, DIY(Do-it-Yourself)</span>
+                        <p> <i class="fa-solid fa-indian-rupee-sign"></i>7,344
+                            <button class="buy">BUY NOW</button>
+    
+                        </p>
+                    </a>
+                </div>
+    
+                <div class="col Product-icon simi">
+                    <a href="" class="Best-product">
+                        <img src="img/sofa-2.webp">
+                    </a>
+    
+                    <a href="">
+                        <h5>Icush Wooden Well Mounted</h5>
+                        <span>Finish Color-brown , DIY(Do-it-Yourself)</span>
+                        <p> <i class="fa-solid fa-indian-rupee-sign"></i>10,527
+                            <button class="buy">BUY NOW</button>
+                        </p>
+                    </a>
+                </div>
+    
+                <div class="col Product-icon simi">
+                    <a href="" class="Best-product">
+                        <img src="img/bed (4).webp">
+                    </a>
+    
+                    <a href="">
+                        <h5>wo Home Mourya Box Bed</h5>
+                        <span>Finish Color-Waknut,DIY(Do-it-Yourself)</span>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i>45,460
+                            <button class="buy">BUY NOW</button>
+                        </p>
+                    </a>
+                </div>
+    
+                <div class="col Product-icon simi">
+                    <a href="" class="Best-product">
+                        <img src="img/table.webp">
+                    </a>
+    
+                    <a href="">
+                        <h5>Solid 6 Seater Dining Table</h5>
+                        <span>Finish Color-Waknut,DIY(Do-it-Yourself)</span>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i>26,999
+                            <button class="buy">BUY NOW</button>
+                        </p>
+                    </a>
+                </div>
+    
+            </div>
+        </div>
+    
+        <!-- ***************************** similar products end ****************************-->
+    
+      
+        <!-- ***************************** Footer Section Start *************************** -->
+        <div class="container-fluid" id="footer">
+            <div class="row">
+    
+                <div class=" col footer-text">
+                    <ul style="list-style: none;">
+                        <th>Contact Us</th>
+                        <li>Phone: 09544644999</li>
+                        <li>Need help or have a question?</li>
+                        <li>Contact us at: ingo@rotalfurniturnitureonline.in</li>
+                        <li>Royal tower Areacode Road, Mukkam, Calicut,, Kozhikode (Calicut),India,673602</li>
+                    </ul>
+                </div>
+    
+                <div class="col footer-text">
+                    <ul>
+                        <th>Company</th>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="location.html">Store Locations</a></li>
+                        <li><a href="signup.html">SignUp...............................................</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col footer-text">
+                    <ul>
+                        <th>Infomation</th>
+                        <li><a href="delifry.html">Delivery Information</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="Refund.html">Refund & Cancellation Policy</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-12 footer-text1">
+                    <ul style="list-style: none;">
+                        <li class="footer-link">
+                            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://about.twitter.com/en"><i class="fa-brands fa-twitter"></i></a>
+                            <small> Copyright © 2023 - longshore ventures INC</small>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <!-- ***************************** Footer Section end *************************** -->
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

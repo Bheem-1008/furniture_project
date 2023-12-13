@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Information</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="CSS/Furniture.css">
+    <link rel="stylesheet" href="CSS/bedroom.css">
+    <link rel="stylesheet" href="CSS/about.css">
+    <link rel="icon" type="icon" href="img/my-icon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+
+<body class="bg-">
+    <!-- ************************************ Header Section Start ***************************** -->
+
+    <div class="container-fluid" id="Header">
+        <div class="row ">
+            <div class="col">
+                <nav class="navbar justify-content-center">
+
+                    <a class="navbar-brand" href="http://127.0.0.1:5500/Furniture.html">
+                        <img src="img/royallogo-1.png">
+                    </a>
+
+
+                    </h6>
+
+                    <div class="logo">
+
+                        <a href="Furniture.html" class="logo-text">HOME</a>
+                        <a href="bedroom.html" class="logo-text">BEDROOM</a>
+                        <a href="diningtable.html" class="logo-text">DINING TABLE</a>
+                        <a href="oficechair.html" class="logo-text">OFFICE CHAIR</a>
+                        <a href="contact.html" class="logo-text">CONTACT</a>
+
+                    </div>
+
+                    <!-- #################### -->
+
+                    <form class="d-flex " role="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input class="control  me-2" type="search" placeholder="  Search" aria-label="Search">
+                    </form>
+
+                    <!-- modal button Start -->
+                    <div class="logo-icon">
+                        <button type="button" class="btn sign-in " data-bs-toggle="modal" data-bs-target="#myModal">
+                            <span> <i class="fa-solid fa-user"></i> Sign in <i class="fa-solid fa-sort-down"></i></span>
+
+                        </button>
+                    </div>
+
+
+                    <!-- offcanvas Start -->
+
+                    <button class="btn d-lg-none menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <div class="offcanvas offcanvas-end" id="demo">
+                        <div class="offcanvas-header">
+                            <img src="img/furniture-logo-design-new4-removebg-preview.png">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="modal-body">
+
+                                <div class="offcanvas-line">
+                                    <a href="Furniture.html"> HOME</a>
+                                </div>
+
+                                <div class="offcanvas-line">
+                                    <a href="bedroom.html"> BEDROOM</a>
+                                </div>
+
+                                <div class="offcanvas-line">
+                                    <a href="diningtable.html">DINING TABLE</a>
+                                </div>
+
+                                <div class="offcanvas-line">
+                                    <a href="oficechair.html">OFFICE CHAIR</a>
+                                </div>
+
+                                <div class="offcanvas-line">
+                                    <a href="contact.html">CONTACT</a>
+                                </div>
+
+                            </div>
+
+                            <!-- offcanvas start -->
+
+                            <button type="button" class="btn sign-up-phone btn-light" data-bs-toggle="modal"
+                                data-bs-target="#myModal1">
+                                <i class="fa-solid fa-user"></i> <span>Sgin Up</span><i
+                                    class="fa-solid fa-sort-down"></i>
+                            </button>
+
+                            <!-- offcanvas end -->
+
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title"><i class="fa-solid fa-user"></i> Login & Signup</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <form method="post">
+                        <div class="mb-3 mt-3">
+                            <div class="form-text">
+                                <p>Username or email address</p>
+                            </div>
+                            <input type="text" class="form-control" id="uname" required>
+
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-text">
+                                <p>Password
+                                    <a href="" class="forget">
+                                        Forget Password?
+                                    </a>
+                                </p>
+                            </div>
+                            <input type="password" class="form-control" id="pwd" name="pswd" required>
+
+                            <div class="invalid-feedback">Please fill out this field.</div><br>
+
+                            <input type="checkbox" name="c1"> Remember Me
+                        </div>
+                        <div class="form-check mb-3">
+
+                            <button type="submit" class="btn btn-primary text-light submit-icon ">Log in</button>
+
+                            <a href="signup.html" class="sign-2">
+                                <p>Sign up</p>
+                            </a>
+
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- modal end-->
+
+    <!-- The offcanvas -->
+    <div class="modal" id="myModal1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title"><i class="fa-solid fa-user"></i> Login & Signup</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <form method="post">
+                        <div class="mb-3 mt-3">
+                            <div class="form-text">
+                                <p>Username or email address</p>
+                            </div>
+                            <input type="text" class="form-control" id="uname" required>
+
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-text">
+                                <p>Password <a href="" class="forget">
+                                        Forget Password?
+                                    </a>
+                                </p>
+                            </div>
+                            <input type="password" class="form-control" id="pwd" name="pswd" required>
+
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="form-check mb-3">
+
+                            <button type="submit" class="btn btn-primary submit-icon">Log in</button>
+
+                            <a href="signup.html" class="sign-2">
+                                <p>Sign up</p>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- offcanvas end -->
+
+    <!-- *************************** Header Section end *********************** -->
+
+    <!-- ********************** about text ***** -->
+    <br><br><br><br><br>
+    <div class="container text">
+        <h1 align="center">Delivery Information</h1><br><br>
+
+        <h2>Do you ship to my city and location?</h2>
+        <p>For a superlative customer experience, we have decided to deliver each product personally. We currently
+            deliver in Delhi/NCR. We are coming to other cities very soon and will keep you posted!
+        </p>
+
+        <h2>What is the estimated delivery time?</h2>
+        <p>Products are typically dispatched within a day of order confirmation.</p>
+        <p>All the products are transported and delivered using the Krishna Furniture’s delivery network.</p>
+        <p>While we try to ensure that the product reaches you within the delivery time communicated, exigencies may
+            delay the delivery. In such cases, please do not worry. Get in touch with us for the latest update on your
+            shipment if we have already not gotten in touch with you.</p>
+        <p>For pre-orders, the estimated delivery time is 12 - 15 days starting from the day of shipping. The day of
+            shipping is indicated on your product page at the time of order. Please note that we will NOT be able to
+            ship pre-orders earlier than the indicated time.
+        </p>
+
+
+        <h2>How do I track my order?</h2>
+        <p>We try our best to deliver your product before you can even think 'Where is it now?' : i.e. well within 10
+            days of your order (or 10 days of the promised shipment date in the case of pre-orders). In a few cases
+            however, we take closer to our promised 12 - 15 days for delivery. In such cases, we proactively call /
+            email the customer to inform them of the status of their product and where it is in transit. In the rare
+            case when you have not received any communication from us for 10 days after order (or 10 days after promised
+            shipment date in the case of pre-orders) do give us a call at our customer care number or email us at
+            info@Royalfurniture.com. Currently there is no online mechanism to check the status of your order.</p>
+
+        <h2>What should I check when the product is delivered to me?</h2>
+        <p>Please check for all the following items when the product is delivered to you:</p>
+
+        <p>1. Please check on all external surfaces across the product for any breakages, cracks, chip-offs, unfinished
+            patches, or borer / insect infestations
+        </p>
+        <p>2. In case there is some dust or a lack of shine, our team will be able to fix this immediately by applying a
+            coat of wood polish or by rubbing the surface with a cloth; this is an accepted industry-standard method for
+            cleaning the surface / polishing it.</p>
+        <p>3. For all products that involve assembly, please ensure that the delivery team assembles the product so you
+            are sure that all nuts and bolts are present and they fit well.</p>
+        <p>4. For all products that require wall installation, kindly decide prior to the delivery team's visit on the
+            exact location in your house where you would want to place your product, and instruct the delivery team to
+            fix the product; please ensure that you have taken all necessary approvals prior for any drilling etc. that
+            may be required to fix wall items in your apartment / home.</p>
+        <P>
+            5. For all products kept on the floor, ensure that the product stands steady and straight. In case there is
+            an uneven leg (less than 5 mm difference), then our team will install bushes at the foot of that leg to
+            balance the product better; in case the uneven leg is more than 5 mm, then we will take the item back to
+            provide a replacement (or a repair) based on extent of change needed.</P>
+
+        <p>6. For all seating products, kindly sit on the item to ensure that the structure is stable with your weight
+            on it.</p>
+        <p>7. Currently we make sure that the internal areas of storage products are well finished to not have any loose
+            pieces / splinters to hurt your arms; however the extent of polish of internal areas may not match with the
+            extent of polish on external areas.</p>
+        <P>8. Wood has natural qualities such as differing grain patterns, minimal stain differences and small knots -
+            small knots which structurally don't impact the product will be fully filled with putty and polished to make
+            sure that they don't hamper the product; knots that alter structural stability of the product would be
+            rejected at the quality control stage; differing grain patterns and stain differences are generally
+            acceptable on hard wood products.</P>
+        <p>9. Hard wood products may expand a small extent during the summer months because of which some drawers may
+            get stuck! There is nothing to worry on this front - if you give a call to our customer care team, our
+            after-sales service team will come and minimize the expansion effect by sanding (using sand paper) on the
+            sides of the product</p>
+        <p>Once the product is delivered and our delivery team leaves your location, we will be able to only honor
+            manufacturing defects and other fair usage breakages as described by the warranty policy
+        </p>
+
+    </div>
+
+
+     <!-- ***************************** similar products ****************************-->
+
+     <div class="container-fluid" id="similar">
+        <div class="div" ><h2>More to Discover</h2></div>
+              
+            <div class="row row-cols-lg-5 row-cols-sm-2">
+    
+                <div class="col Product-icon simi">
+                    <a href="" class="Best-product">
+                        <img src="img/bag-cover.webp">
+                    </a>
+    
+                    <a href="">
+                        <h5>Devigue XXXL Tear Drop</h5>
+                        <span>Tan, Black</span>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i>854
+                            <button class="buy">BUY NOW</button>
+                        </p>
+                    </a>
+                </div>
+    
+                <div class="col Product-icon simi">
+                    <a href="" class="Best-product">
+                        <img src="img/officechair (1).webp">
+                    </a>
+    
+                    <a href="">
+                        <h5>SAVYA HOME Office Chair |</h5>
+                        <span>Red, DIY(Do-it-Yourself)</span>
+                        <p> <i class="fa-solid fa-indian-rupee-sign"></i>7,344
+                            <button class="buy">BUY NOW</button>
+    
+                        </p>
+                    </a>
+                </div>
+    
+                <div class="col Product-icon simi">
+                    <a href="" class="Best-product">
+                        <img src="img/sofa-2.webp">
+                    </a>
+    
+                    <a href="">
+                        <h5>Icush Wooden Well Mounted</h5>
+                        <span>Finish Color-brown , DIY(Do-it-Yourself)</span>
+                        <p> <i class="fa-solid fa-indian-rupee-sign"></i>10,527
+                            <button class="buy">BUY NOW</button>
+                        </p>
+                    </a>
+                </div>
+    
+                <div class="col Product-icon simi">
+                    <a href="" class="Best-product">
+                        <img src="img/bed (4).webp">
+                    </a>
+    
+                    <a href="">
+                        <h5>wo Home Mourya Box Bed</h5>
+                        <span>Finish Color-Waknut,DIY(Do-it-Yourself)</span>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i>45,460
+                            <button class="buy">BUY NOW</button>
+                        </p>
+                    </a>
+                </div>
+    
+                <div class="col Product-icon simi">
+                    <a href="" class="Best-product">
+                        <img src="img/table.webp">
+                    </a>
+    
+                    <a href="">
+                        <h5>Solid 6 Seater Dining Table</h5>
+                        <span>Finish Color-Waknut,DIY(Do-it-Yourself)</span>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i>26,999
+                            <button class="buy">BUY NOW</button>
+                        </p>
+                    </a>
+                </div>
+    
+            </div>
+        </div>
+    
+        <!-- ***************************** similar products end ****************************-->
+
+        
+    <!-- ***************************** Footer Section Start *************************** -->
+    <div class="container-fluid" id="footer">
+        <div class="row">
+
+            <div class=" col footer-text">
+                <ul style="list-style: none;">
+                    <th>Contact Us</th>
+                    <li>Phone: 09544644999</li>
+                    <li>Need help or have a question?</li>
+                    <li>Contact us at: ingo@rotalfurniturnitureonline.in</li>
+                    <li>Royal tower Areacode Road, Mukkam, Calicut,, Kozhikode (Calicut),India,673602</li>
+                </ul>
+            </div>
+
+            <div class="col footer-text">
+                <ul>
+                    <th>Company</th>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="location.html">Store Locations</a></li>
+                    <li><a href="signup.html">SignUp...............................................</a></li>
+                </ul>
+            </div>
+
+            <div class="col footer-text">
+                <ul>
+                    <th>Infomation</th>
+                    <li><a href="delifry.html">Delivery Information</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="Refund.html">Refund & Cancellation Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 footer-text1">
+                <ul style="list-style: none;">
+                    <li class="footer-link">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://about.twitter.com/en"><i class="fa-brands fa-twitter"></i></a>
+                        <small> Copyright © 2023 - longshore ventures INC</small>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ***************************** Footer Section end *************************** -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

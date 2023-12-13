@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#sign-up{
+    height:800px;
+    display: flex;
+    justify-content:center;
+    margin-top:30px;
+}
+#sign-up small{
+    font-size:12px;
+    position: relative;
+    top:-15px;
+}
+p{
+    position: relative;
+    top:17px;
+    left:7px;
+}
+.form-control{
+    margin-top: 20px;
+}
+h6{
+    position: relative;
+    top: 20px;
+}
+.form-redio{
+    margin-left: 50px;
+}
+#submit{
+    background: #f92c2cdd;
+    float: right;
+    width:150px;
+    height:40px;
+    color:#fff;
+}
+
+/* footer */
+#footer{
+    background: #000;
+    color:#fff;
+    margin-top: 40px;
+}
+.footer-text{
+    position: relative;
+    top:30px;
+}
+.footer-text li{
+    color:rgb(207, 204, 204);
+    line-height: 1.9;
+    position: relative;
+    top:20px
+}
+.footer-text a{
+    text-decoration: none;
+    color:  rgb(192, 189, 189);
+}
+.footer-text{
+    border-right:1px solid rgb(49, 48, 48);
+}
+.footer-text1{
+    position: relative;
+    top:40px;
+    border-top:1px solid rgba(128, 128, 128, 0.663);
+}
+.footer-text1 a{
+    margin-top: 10px;
+    color:rgb(176, 172, 172);
+    display:inline-block;
+    width:35px
+}
+.footer-link small{
+    float: right;
+    margin-top: 10px;
+    color:rgb(84, 83, 83);
+
+}   
+
+
+@media only screen and (max-width:600px) {
+    #footer{
+        height:670px;
+    }
+  
+}
+
+
+@media only screen and (min-width:700px) {
+
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+    #footer{
+        height:370px;
+    }
+
+ 
+}
+
+@media only screen and (min-width:1200px) {
+
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+    #footer{
+        height:290px;
+    }
+
+}
+

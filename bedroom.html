@@ -1,0 +1,1396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BED Room Furniture </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="CSS/Furniture.css">
+    <link rel="stylesheet" href="CSS/bedroom.css">
+    <link rel="icon" type="icon" href="img/my-icon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+    <script src="js/BDOC.js"></script>
+
+</head>
+<body>
+
+    <!-- ************************************ Header Section Start ***************************** -->
+
+    <div class="container-fluid" id="Header">
+        <div class="row ">
+            <div class="col">
+                <nav class="navbar justify-content-center">
+
+                    <a class="navbar-brand" href="http://127.0.0.1:5500/Furniture.html">
+                        <img src="img/royallogo-1.png">
+                    </a>
+
+                    <div class="logo">
+
+                        <a href="Furniture.html" class="logo-text">HOME</a>
+                        <a href="bedroom.html" class="logo-text">BEDROOM</a>
+                        <a href="diningtable.html" class="logo-text">DINING TABLE</a>
+                        <a href="oficechair.html" class="logo-text">OFFICE CHAIR</a>
+                        <a href="contact.html" class="logo-text">CONTACT</a>
+
+                    </div>
+
+                    <!-- #################### -->
+
+
+                    <form class="d-flex " role="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input class="control  me-2" type="search" placeholder="  Search" aria-label="Search">
+                    </form>
+
+                    <!-- modal button Start -->
+                    <div class="logo-icon">
+                        <button type="button" class="btn sign-up " data-bs-toggle="modal" data-bs-target="#myModal2">
+
+                            <span> <i class="fa-solid fa-user"></i> Sgin Up <i class="fa-solid fa-sort-down"></i></span>
+
+                        </button>
+                    </div>
+
+                    <!-- offcanvas Start -->
+
+                    <button class="btn  d-lg-none menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <div class="offcanvas offcanvas-end" id="demo">
+                        <div class="offcanvas-header">
+                            <img src="img/royallogo-1.png">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="modal-body">
+
+                                <div class="offcanvas-line">
+                                    <a href="Furniture.html"> HOME</a>
+                                </div>
+
+                                <div class="offcanvas-line">
+                                    <a href="bedroom.html"> BEDROOM</a>
+                                </div>
+
+                                <div class="offcanvas-line">
+                                    <a href="diningtable.html">DINING TABLE</a>
+                                </div>
+
+                                <div class="offcanvas-line">
+                                    <a href="oficechair.html">OFFICE CHAIR</a>
+                                </div>
+
+                                <div class="offcanvas-line">
+                                    <a href="contact.html">CONTACT</a>
+                                </div>
+
+                            </div>
+
+                            <!-- offcanvas start -->
+
+                            <button type="button" class="btn sign-up-phone btn-light" data-bs-toggle="modal"
+                                data-bs-target="#myModal2">
+                                <i class="fa-solid fa-user"></i> <span>SginUp</span><i
+                                    class="fa-solid fa-sort-down"></i>
+                            </button>
+
+                            <!-- offcanvas end -->
+
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title"><i class="fa-solid fa-user"></i> Login & Signup</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <form method="post">
+                        <div class="mb-3 mt-3">
+                            <div class="form-text">
+                                <p>Username or email address</p>
+                            </div>
+                            <input type="text" class="form-control" id="uname" required>
+
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-text">
+                                <p>Password <a href="" class="forget">
+                                        Forget Password?
+                                    </a>
+                                </p>
+                            </div>
+                            <input type="password" class="form-control" id="pwd" name="pswd" required>
+
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="form-check mb-3">
+
+                            <button type="submit" class="btn btn-primary submit-icon">Sign in</button>
+
+                            <a href="signup.html" class="sign-2">
+                                <p>Sign up</p>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- modal end-->
+
+    <!-- The offcanves -->
+    <div class="modal" id="myModal2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title"><i class="fa-solid fa-user"></i> Login & Signup</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <form method="post">
+                        <div class="mb-3 mt-3">
+                            <div class="form-text">
+                                <p>Username or email address</p>
+                            </div>
+                            <input type="text" class="form-control" id="uname" required>
+
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-text">
+                                <p>Password <a href="" class="forget">
+                                        Forget Password?
+                                    </a>
+                                </p>
+                            </div>
+                            <input type="password" class="form-control" id="pwd" name="pswd" required>
+
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="form-check mb-3">
+
+                            <button type="submit" class="btn btn-primary submit-icon">Sign in</button>
+
+                            <a href="signup.html" class="sign-2">
+                                <p>Sign up</p>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- offcanvas end -->
+    <!-- *************************** Header Section end *********************** -->
+    
+    <!-- *************************** Banner Section Start *********************** -->
+
+    <div class="container-fluid" id="banner-box">
+        <div class="row py-3">
+            <div class="col">
+                <a href="bedroom.html">
+                    <img src="img/category_banner_20231018082132.jpg" alt="" class="d-block w-100">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- *************************** Banner Section End *********************** -->
+    <br><br></br>
+    <!-- ********************* Best products Section Starts *************************** -->
+
+    <div class="container-fluid" id="Products">
+        <div class="row py-5">
+            <div class="col-3" id="bedroom">
+                <ul class="nav nav-pills flex-column" id="mytab-1">
+                    <h5 id="name-anim">Filters</h5>
+                    <hr width="90%">
+
+
+                    <li class="nav-item" id="name-anim1">
+                        <a class="dropdown-toggle product-button active" data-bs-toggle="pill" href="#home">Bed
+                            Room</a>
+                    </li>
+                    <li class="nav-item" id="name-anim2">
+                        <a class="dropdown-toggle" data-bs-toggle="pill" href="#furniture">Furnitre</a>
+
+                    </li>
+
+                    <!-- *************** Price ************* -->
+
+                    <li class="price-text">
+                        <label for="customRange1" class="form-label" id="name-anim3">PRICE</label>
+                        <input type="range" class="form-range" id="customRange1" id="name-anim4">
+
+
+                        <div class="btn-group">
+                            <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" id="name-anim5">
+                                Min.
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Min</a></li>
+                                <li><a class="dropdown-item" href="#">500</a></li>
+                                <li><a class="dropdown-item" href="#">1000</a></li>
+                                <li><a class="dropdown-item" href="#">2000</a></li>
+                                <li><a class="dropdown-item" href="#">4000</a></li>
+                                <li><a class="dropdown-item" href="#">6000</a></li>
+                            </ul>
+                        </div>
+
+                        <span id="name-anim6">To</span>
+
+
+                        <div class="btn-group min-price">
+                            <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" id="name-anim7">
+                                3000 <i class="fa-solid fa-plus"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">200</a></li>
+                                <li><a class="dropdown-item" href="#">500</a></li>
+                                <li><a class="dropdown-item" href="#">1000</a></li>
+                                <li><a class="dropdown-item" href="#">2000</a></li>
+                                <li><a class="dropdown-item" href="#">4000</a></li>
+                                <li><a class="dropdown-item" href="#">6000</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- *************** Price end ************* -->
+                    <br>
+                    <!-- *************** brand  ************* -->
+                    <li>
+                        <div class="btn-group">
+                            <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <samp id="name-anim8"> BRAND</samp>
+                            </button>
+
+                            <ul class="dropdown-menu">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        24x7emall
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        3D INDIA
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        A ONE SHOPPE
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        A Walls Dream
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Luxury
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Adonai
+                                    </label>
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- ************** Brand end************* -->
+
+                    <!-- *************** offers ************* -->
+
+                    <li>
+                        <div class="btn-group">
+                            <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <samp id="name-anim9"> OFFERS</samp>
+                            </button>
+
+                            <ul class="dropdown-menu">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        No Cost EMI
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Sprecia Price
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Buy More ,Save More
+                                    </label>
+                                </div>
+
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- *************** offers ************* -->
+                    <hr width="90%">
+                    <!-- *************** ratings ************* -->
+
+                    <li>
+                        <div class="btn-group">
+                            <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <samp id="name-anim01"> CUSTOMER RATINGS</samp>
+                            </button>
+
+                            <ul class="dropdown-menu">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        4 <i class="fa-solid fa-star"></i> & above
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        3 <i class="fa-solid fa-star"></i> & above
+                                    </label>
+                                </div>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- *************** ratings ************* -->
+                    <hr width="90%">
+                    <!-- *************** discount ************* -->
+
+                    <li>
+                        <div class="btn-group">
+                            <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <samp id="name-anim02">DISCOUNT</samp>
+                            </button>
+
+                            <ul class="dropdown-menu">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        80% or more
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        70% or more
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        60% or more
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        50% or more
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        40% or more
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        No Free
+                                    </label>
+                                </div>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- *************** discount end ************* -->
+                    <hr width="90%">
+                    <!-- *************** avalilatlity ************* -->
+
+                    <li>
+                        <div class="btn-group">
+                            <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <samp id="name-anim03"> AVAILABILITY</samp>
+                            </button>
+
+                            <ul class="dropdown-menu">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Inlide Out of Stock
+                                    </label>
+                                </div>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- *************** avalilatlity  end************* -->
+                    <hr width="90%">
+                    <!-- *************** GST ************* -->
+
+                    <li>
+                        <div class="btn-group">
+                            <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+
+                                <samp id="name-anim04">GST INVOICE AVAILABLE</samp>
+                            </button>
+
+                            <ul class="dropdown-menu">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        GST Invoice Available
+                                    </label>
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- *************** GST end ************* -->
+                </ul>
+            </div>
+
+
+            <!-- ********************************************  Bed room start   **************** -->
+
+            <div class="tab-content col-9" id="mytabcontent">
+                <div id="home" class="container tab-pane fade show active fur-text">
+                    <div class="row row-cols-lg-4">
+
+                        <div class="col Product-icon" id="pro-animate">
+                            <a href="bedroombuy.html" class="Best-product">
+                                <img src="img/bed (1).webp">
+                            </a>
+
+                            <a href="bedroombuy.html    ">
+                                <h5>Vintage Home Oasis Ratan Solid Wood king</h5>
+                                <span>Finish Color-Provincial Teak, Delivery Condition</span>
+                                <spna>3.9<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>40,112
+                                    <button class="buy">BUY NOW</button>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon" id="pro-animate1">
+                            <a href="" class="Best-product">
+                                <img src="img/bed (2).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Bharat Lifestyle Clinton Queen Box Bed</h5>
+                                <span>Finish Color-Wenge,Dilivery Condition-Knock Down</span>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>14,999
+                                    <button class="buy">BUY NOW</button>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon" id="pro-animate2">
+                            <a href="" class="Best-product">
+                                <img src="img/bed (3).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Engineered Wood Queen Box Bed</h5>
+                                <span>Finish Color-Brown,Delivery Condition-Knock Down</span>
+                                <spna>3.3<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>16,499
+                                    <button class="buy">BUY NOW</button>
+                                </p>
+                            </a>
+                        </div>
+
+
+                        <div class="col Product-icon" id="pro-animate3">
+                            <a href="" class="Best-product">
+                                <img src="img/bed (4).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Vintej Home Mourya Solid Wood Box Bed</h5>
+                                <span>Finish Color-Provincial Teak, Delivery Condition</span>
+                                <spna>2.0<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>45,460
+                                    <button class="buy">BUY NOW</button>
+                                </p>
+                            </a>
+                        </div>
+
+                        <!-- second row -->
+                        <div class="col Product-icon" id="pro-animate4">
+                            <a href="" class="Best-product">
+                                <img src="img/bed-luxury (1).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor Wallpaper</h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon" id="pro-animate5">
+                            <a href="" class="Best-product">
+                                <img src="img/bed-luxury (2).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor Wallpaper</h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon" id="pro-animate6">
+                            <a href="" class="Best-product">
+                                <img src="img/bed-luxury (3).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor Wallpaper</h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon" id="pro-animate7">
+                            <a href="" class="Best-product">
+                                <img src="img/bed-luxury (4).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor Wallpaper</h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <!-- theard row -->
+                        <div class="col Product-icon" id="pro-animate8">
+                            <a href="" class="Best-product">
+                                <img src="img/bed (1).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor Wallpaper</h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon" id="pro-animate9">
+                            <a href="" class="Best-product">
+                                <img src="img/bed-luxury (6).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor Wallpaper</h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon" id="pro-animate01">
+                            <a href="" class="Best-product">
+                                <img src="img/bed-luxury (7).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor Wallpaper</h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon" id="pro-animate02">
+                            <a href="" class="Best-product">
+                                <img src="img/bed-luxury (8).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor Wallpaper</h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <!-- four row  -->
+                        <div class="col Product-icon" id="pro-animate03">
+                            <a href="" class="Best-product">
+                                <img src="img/bed-luxury (9).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor Wallpaper</h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon" id="pro-animate04">
+                            <a href="" class="Best-product">
+                                <img src="img/bed-luxury (10).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor Wallpaper</h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon" id="pro-animate05">
+                            <a href="" class="Best-product">
+                                <img src="img/bed (4).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor Wallpaper</h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+
+                        <div class="col Product-icon" id="pro-animate06">
+                            <a href="" class="Best-product">
+                                <img src="img/bed-luxury (7).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor Wallpaper</h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <!-- five row -->
+                        <div class="col Product-icon" id="pro-animate07">
+                            <a href="" class="Best-product">
+                                <img src="img/bed-luxury (8).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor Wallpaper</h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon" id="pro-animate08">
+                            <a href="" class="Best-product">
+                                <img src="img/bed-luxury (9).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor Wallpaper</h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon" id="pro-animate09">
+                            <a href="" class="Best-product">
+                                <img src="img/bed (4).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor Wallpaper</h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon" id="pro-animate001">
+                            <a href="" class="Best-product">
+                                <img src="img/bed-luxury (7).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor Wallpaper</h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- #############################*****************************  Bed room end **************** -->
+
+                <!-- ################################**********************  second bed ********************************-->
+
+                <div id="furniture" class="container tab-pane fade ">
+                    <div class="row row-cols-lg-4">
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/bed (2).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor Wallpaper</h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/bed-luxury (10).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor Wallpaper</h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/bed (4).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor Wallpaper</h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/bed-luxury (7).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor Wallpaper</h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/bed-luxury (8).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor Wallpaper</h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/bed-luxury (9).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor Wallpaper</h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <!-- ######################## -->
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/style (1).webp">
+                            </a>
+
+                            <a href="">
+                                <h5> Decor Round Wrought Iron Side Table</h5>
+                                <span>Finish Color-Golden & White ,PRe-assembled</span>
+                                <spna>4.3<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>2,999
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/style (2).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>A3 BOX Ws-901-4SET Wooden Wall Shelf</h5>
+                                <span>Nubmer of Shelves-4,Brown</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>249
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/style (3).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>2+4 Layer Multipurpose Bady </h5>
+                                <span>Finish Color-BLUE,DIY(DO-IT-Yourself)</span><br>
+                                <spna>3.4<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>579
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/style (4).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Store Carbon Steel Collapsible Wardrobe </h5>
+                                <span>Finish Color-Black,DIY(Do-it-Yourself)</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>569
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <!-- ############################# -->
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/room (1).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Aquire 100 sm wall for Linivin Room Peacock</h5>
+                                <span>Pack of 1</span><br>
+                                <spna>4.2<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>89
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/room (2).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>DECORASIA Hexagon Shape Wooden Wall Shelf</h5>
+                                <span>Number of shelves-6,Brown,Orange</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>1,299
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/room (3).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>classiconline Wiiden Wall Shelf</h5>
+                                <span>Number of Shelves -3, Black</span><br>
+                                <spna>4.3<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>805
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/room (4).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Dhori Roller Blind Hand Drawn On Ceiling </h5>
+                                <span>Banboo, Polyester</span><br>
+                                <spna>1.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>3,599
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <!-- ################################ -->
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/roomstyle (1).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Abhi Sports 2 pocket With Pen Stand holder for home off</h5>
+                                <span>7 Hooks, Brown</span><br>
+                                <spna>1.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>155
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/roomstyle (2).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>VDOX solid Wood Side Table</h5>
+                                <span>Finish Color-brown,DIY(Dp-it-Yourseld)</span><br>
+                                <spna>3.9<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>406
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/roomstyle (3).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Khamma Ghanni Handicrafts Wooden Key Holder for Wall </h5>
+                                <span>7 Hooks,Brown</span><br>
+                                <spna>1.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>149
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/roomstyle (4).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Fraglite Lemon Refill</h5>
+                                <span>1 Units </span><br>
+                                <spna>1.0<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>40
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/bed-luxury (8).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor Wallpaper</h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/bed-luxury (9).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Print Panda Floral & Bolanical Multicolor Wallpaper</h5>
+                                <span>40 cm x 325 cm</span><br>
+                                <spna>3.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>272
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <!-- ################################## -->
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/table.webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Fraglite Lemon Refill</h5>
+                                <span>1 Units </span><br>
+                                <spna>1.0<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>40
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/bed (1).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Fraglite Lemon Refill</h5>
+                                <span>1 Units </span><br>
+                                <spna>1.0<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>40
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/sofa-style (2).webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Fraglite Lemon Refill</h5>
+                                <span>1 Units </span><br>
+                                <spna>1.0<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>40
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/sofa-2.webp">
+                            </a>
+
+                            <a href="">
+                                <h5>Fraglite Lemon Refill</h5>
+                                <span>1 Units </span><br>
+                                <spna>1.0<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>40
+                                    <button class="buy">BUY NOW</button>
+
+                                </p>
+                            </a>
+                        </div>
+
+                        <!-- ############################## -->
+
+
+                    </div>
+                </div>
+
+                <!-- #####################################  second bed end *******************************************-->
+            </div>
+        </div>
+    </div>
+
+    <!-- ********************* Best products Section end *************************** -->
+
+    <!-- ***************************** similar products ****************************-->
+
+    <div class="container-fluid" id="similar">
+    <div class="div" id="disco"><h2>More to Discover</h2></div>
+          
+        <div class="row row-cols-lg-5 row-cols-sm-2">
+
+            <div class="col Product-icon simi" id="disco1">
+                <a href="" class="Best-product">
+                    <img src="img/bag-cover.webp">
+                </a>
+
+                <a href="">
+                    <h5>Devigue XXXL Tear Drop</h5>
+                    <span>Tan, Black</span>
+                    <p><i class="fa-solid fa-indian-rupee-sign"></i>854
+                        <button class="buy">BUY NOW</button>
+                    </p>
+                </a>
+            </div>
+
+            <div class="col Product-icon simi" id="disco2">
+                <a href="" class="Best-product">
+                    <img src="img/officechair (1).webp">
+                </a>
+
+                <a href="">
+                    <h5>SAVYA HOME Office Chair |</h5>
+                    <span>Red, DIY(Do-it-Yourself)</span>
+                    <p> <i class="fa-solid fa-indian-rupee-sign"></i>7,344
+                        <button class="buy">BUY NOW</button>
+
+                    </p>
+                </a>
+            </div>
+
+            <div class="col Product-icon simi" id="disco3">
+                <a href="" class="Best-product">
+                    <img src="img/sofa-2.webp">
+                </a>
+
+                <a href="">
+                    <h5>Icush Wooden Well Mounted</h5>
+                    <span>Finish Color-brown , DIY(Do-it-Yourself)</span>
+                    <p> <i class="fa-solid fa-indian-rupee-sign"></i>10,527
+                        <button class="buy">BUY NOW</button>
+                    </p>
+                </a>
+            </div>
+
+            <div class="col Product-icon simi" id="disco4">
+                <a href="" class="Best-product">
+                    <img src="img/bed (4).webp">
+                </a>
+
+                <a href="">
+                    <h5>wo Home Mourya Box Bed</h5>
+                    <span>Finish Color-Waknut,DIY(Do-it-Yourself)</span>
+                    <p><i class="fa-solid fa-indian-rupee-sign"></i>45,460
+                        <button class="buy">BUY NOW</button>
+                    </p>
+                </a>
+            </div>
+
+            <div class="col Product-icon simi" id="disco5">
+                <a href="" class="Best-product">
+                    <img src="img/table.webp">
+                </a>
+
+                <a href="">
+                    <h5>Solid 6 Seater Dining Table</h5>
+                    <span>Finish Color-Waknut,DIY(Do-it-Yourself)</span>
+                    <p><i class="fa-solid fa-indian-rupee-sign"></i>26,999
+                        <button class="buy">BUY NOW</button>
+                    </p>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ***************************** similar products end ****************************-->
+
+  
+    <!-- ***************************** Footer Section Start *************************** -->
+    <div class="container-fluid" id="footer">
+        <div class="row">
+
+            <div class=" col footer-text" id="footer-anim1">
+                <ul style="list-style: none;">
+                    <th>Contact Us</th>
+                    <li>Phone: 09544644999</li>
+                    <li>Need help or have a question?</li>
+                    <li>Contact us at: ingo@rotalfurniturnitureonline.in</li>
+                    <li>Royal tower Areacode Road, Mukkam, Calicut,, Kozhikode (Calicut),India,673602</li>
+                </ul>
+            </div>
+
+            <div class="col footer-text" id="footer-anim2">
+                <ul>
+                    <th>Company</th>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="location.html">Store Locations</a></li>
+                    <li><a href="signup.html">SignUp...............................................</a></li>
+                </ul>
+            </div>
+
+            <div class="col footer-text" id="footer-anim3">
+                <ul>
+                    <th>Infomation</th>
+                    <li><a href="delifry.html">Delivery Information</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="Refund.html">Refund & Cancellation Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 footer-text1" id="footer-anim4">
+                <ul style="list-style: none;">
+                    <li class="footer-link">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://about.twitter.com/en"><i class="fa-brands fa-twitter"></i></a>
+                        <small> Copyright © 2023 - longshore ventures INC</small>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ***************************** Footer Section end *************************** -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

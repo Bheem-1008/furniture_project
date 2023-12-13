@@ -1,0 +1,1678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Online shoping</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="CSS/Furniture.css">
+    <link rel="stylesheet" href="CSS/bedroom.css">
+    <link rel="icon" type="icon" href="img/my-icon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <script src="js/furniture.js"></script>
+
+</head>
+
+<body>
+    <!-- ************************************ Header Section Start ***************************** -->
+
+    <div class="container-fluid" id="Header">
+        <div class="row ">
+            <div class="col">
+                <nav class="navbar justify-content-center">
+
+                    <a class="navbar-brand" href="http://127.0.0.1:5500/Furniture.html">
+                        <img src="img/royallogo-1.png">
+                    </a>
+
+
+                    </h6>
+
+                    <div class="logo">
+
+                        <a href="Furniture.html" class="logo-text">HOME</a>
+                        <a href="bedroom.html" class="logo-text">BEDROOM</a>
+                        <a href="diningtable.html" class="logo-text">DINING TABLE</a>
+                        <a href="oficechair.html" class="logo-text">OFFICE CHAIR</a>
+                        <a href="contact.html" class="logo-text">CONTACT</a>
+
+                    </div>
+
+                    <!-- #################### -->
+
+                    <form class="d-flex " role="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input class="control  me-2" type="search" placeholder="  Search" aria-label="Search">
+                    </form>
+
+                    <!-- modal button Start -->
+                    <div class="logo-icon">
+                        <button type="button" class="btn sign-in " data-bs-toggle="modal" data-bs-target="#myModal">
+                            <span> <i class="fa-solid fa-user"></i> Sign in <i class="fa-solid fa-sort-down"></i></span>
+
+                        </button>
+                    </div>
+
+
+                    <!-- offcanvas Start -->
+
+                    <button class="btn d-lg-none menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <div class="offcanvas offcanvas-end" id="demo">
+                        <div class="offcanvas-header">
+                            <img src="img/furniture-logo-design-new4-removebg-preview.png">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="modal-body">
+
+                                <div class="offcanvas-line">
+                                    <a href="Furniture.html"> HOME</a>
+                                </div>
+
+                                <div class="offcanvas-line">
+                                    <a href="bedroom.html"> BEDROOM</a>
+                                </div>
+
+                                <div class="offcanvas-line">
+                                    <a href="diningtable.html">DINING TABLE</a>
+                                </div>
+
+                                <div class="offcanvas-line">
+                                    <a href="oficechair.html">OFFICE CHAIR</a>
+                                </div>
+
+                                <div class="offcanvas-line">
+                                    <a href="contact.html">CONTACT</a>
+                                </div>
+
+                            </div>
+
+                            <!-- offcanvas start -->
+
+                            <button type="button" class="btn sign-up-phone btn-light" data-bs-toggle="modal"
+                                data-bs-target="#myModal1">
+                                <i class="fa-solid fa-user"></i> <span>Sgin Up</span><i
+                                    class="fa-solid fa-sort-down"></i>
+                            </button>
+
+                            <!-- offcanvas end -->
+
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title"><i class="fa-solid fa-user"></i> Login & Signup</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <form method="post">
+                        <div class="mb-3 mt-3">
+                            <div class="form-text">
+                                <p>Username or email address</p>
+                            </div>
+                            <input type="text" class="form-control" id="uname" required>
+
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-text">
+                                <p>Password
+                                    <a href="" class="forget">
+                                        Forget Password?
+                                    </a>
+                                </p>
+                            </div>
+                            <input type="password" class="form-control" id="pwd" name="pswd" required>
+
+                            <div class="invalid-feedback">Please fill out this field.</div><br>
+
+                            <input type="checkbox" name="c1"> Remember Me
+                        </div>
+                        <div class="form-check mb-3">
+
+                            <button type="submit" class="btn btn-primary text-light submit-icon ">Log in</button>
+
+                            <a href="signup.html" class="sign-2">
+                                <p>Sign up</p>
+                            </a>
+
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- modal end-->
+
+    <!-- The offcanvas -->
+    <div class="modal" id="myModal1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title"><i class="fa-solid fa-user"></i> Login & Signup</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <form method="post">
+                        <div class="mb-3 mt-3">
+                            <div class="form-text">
+                                <p>Username or email address</p>
+                            </div>
+                            <input type="text" class="form-control" id="uname" required>
+
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-text">
+                                <p>Password <a href="" class="forget">
+                                        Forget Password?
+                                    </a>
+                                </p>
+                            </div>
+                            <input type="password" class="form-control" id="pwd" name="pswd" required>
+
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="form-check mb-3">
+
+                            <button type="submit" class="btn btn-primary submit-icon">Log in</button>
+
+                            <a href="signup.html" class="sign-2">
+                                <p>Sign up</p>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- offcanvas end -->
+
+    <!-- *************************** Header Section end *********************** -->
+
+    <!-- *************************** Banner Section Start *********************** -->
+
+    <div class="container-fluid" id="banner-box">
+        <div class="row py-3">
+            <div class="col">
+                <div id="mycarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active" data-bs-interval="3000">
+
+                            <a href="sofa.html">
+                                <h1 id="#"></h1> <img src="img/Artboard – 3(1).png" alt="" class="d-block w-100">
+                            </a>
+                            <div class="carousel-caption shop-now">
+                                <p>new COLLECTION</p>
+                                <h1>FURNITURE</h1>
+                                <a href="">SHOP NOW</a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item " data-bs-interval="3000">
+
+                            <a href="bedroom.html">
+                                <img src="img/category_banner_20231018082132.jpg" alt="" class="d-block w-100">
+                            </a>
+                        </div>
+
+                        <div class="carousel-item " data-bs-interval="3000">
+
+                            <a href="diningtable.html">
+                                <img src="img/category_banner_20231018081916.jpg" alt="" class="d-block w-100">
+                            </a>
+                        </div>
+
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <a href="oficechair.html">
+                                <img src="img/WiproThats-It-Gray-and-carbon-op3 (1).jpg" alt="" class="d-block w-100">
+                            </a>
+                        </div>
+
+                        <a href="#mycarousel" class="carousel-control-prev" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#mycarousel" class="carousel-control-next" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- *************************** Banner Section End *********************** -->
+
+    <!-- ************************* Fast dlivery ******************** -->
+
+    <div class="contaner" id="fast-dlivery">
+        <h4 class="py-3 text-center" id="pro-animate">Explore Our Furniture Range</h4>
+        <div class="container Delivery">
+            <div class="row">
+
+                <div class="col  Delivery-text" id="pro-animate1">
+                    <div class="delivery-pro">
+                        <div class="fast-imag">
+                            <img src="img/icon-fast (3).png">
+                        </div>
+
+                        <h5>FREE SHIPPING</h5>
+                        <span>Free shipping All Us Order Or <br> Order Above 500 </span>
+                    </div>
+                </div>
+
+                <div class="col  Delivery-text" id="pro-animate2">
+
+                    <div class="delivery-pro">
+                        <div class="fast-imag">
+                            <img src="img/pngwing.com.png">
+                        </div>
+
+                        <h5>SAVE MONEY</h5>
+                        <span>Save Money At Every Product</span>
+                    </div>
+                </div>
+
+                <div class="col  Delivery-text" id="pro-animate3">
+                    <div class="delivery-pro">
+                        <div class="fast-imag">
+                            <img src="img/icon-fast (1).png">
+                        </div>
+                        <h5>100% SECURE PAYMENT</h5>
+                        <span>Simple Return It Within 30 Day's <br> For An Exchange</span>
+                    </div>
+                </div>
+
+                <div class="col  Delivery-text" id="pro-animate4">
+                    <div class="delivery-pro">
+                        <div class="fast-imag">
+                            <img src="img/icon-fast (2).png">
+                        </div>
+                        <h5>30 DAY'S RETURN</h5>
+                        <span>Simple Return It Within 30 Day's <br> For An Exchange</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ************************* Fast dlivery end ******************** -->
+
+    <br><br><br>
+    <!-- ********************* Best products Section Starts *************************** -->
+
+    <div class="container-fluid" id="Products">
+        <h4 class="py-3 text-center" id="pro-animate5">Huge Collection Of Products</h4>
+        <div class="row py-5 justify-content-center">
+            <div class="col-3">
+                <ul class="nav nav-pills flex-column" id="mytab">
+                    <li class="nav-item">
+                        <a class="product-button active" data-bs-toggle="pill" href="#home" id="name-anim">All furniture</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a data-bs-toggle="pill" href="#Bedroom" id="name-anim1">Bed Room</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a data-bs-toggle="pill" href="#DiningTable" id="name-anim2">Dening Table</a>
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a data-bs-toggle="pill" href="#Office" id="name-anim3">Office Chair</a>
+
+                    </li>
+                </ul>
+            </div>
+
+            <!-- ############################## all product **************** -->
+
+            <div class="tab-content col-9" id="mytabcontent">
+                <div id="home" class="container tab-pane fade show active">
+                    <div class="row row-cols-lg-4"> 
+
+                        <div class="col Product-icon" id="pro-animate6">
+                            <a href="best-sofa-2.html" class="Best-product">
+                                <img src="img/sofa-style (2).webp">
+                            </a>
+
+                            <a href="best-sofa-2.html">
+                                <h5>Little Nap Fabric Manual</h5>
+                                <span>Finish Color-Grey,DIY(D0-it-Yourself)</span><br>
+                                <spna>3.9<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>19,759
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>37,999</s>
+                                    <small>48% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon" id="pro-animate7">
+                            <a href="best-sofa.html" class="Best-product">
+                                <img src="img/sofasty (2).webp" height="100px">
+                            </a>
+
+                            <a href="best-sofa.html">
+                                <h5>ORIAN OUTDOOR SOFA SET</h5>
+                                <span>Create An Ulrta comfy And Royal Outdoor Space</span>
+                                <spna>4.5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>16,500
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>24,999</s>
+                                    <small>40% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon" id="pro-animate8">
+                            <a href="sofa.html" class="Best-product">
+                                <img src="img/sofasty (1).webp">
+                            </a>
+
+                            <a href="sofa.html">
+                                <h5>Beleza tufted Wing solid</h5>
+                                <span>Finish color-yellow, DIY (DO-it-Yourself)</span><br>
+                                <spna>3.1<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>12,498
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>19,000</s>
+                                    <small>33% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon" id="pro-animate9">
+                            <a href="sofa.html" class="Best-product">
+                                <img src="img/almari.png">
+                            </a>
+
+                            <a href="sofa.html">
+                                <h5>ALMIRAH</h5>
+                                <span>Solid Wood Furniture</span><br>
+                                <spna>3.2<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>9,500
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>25,000</s>
+                                    <small>40% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <!-- second row  -->
+                        <div class="col Product-icon" id="pro-animate01">
+                            <a href="sofa.html" class="Best-product">
+                                <img src="img/bag-cover.webp">
+                            </a>
+
+                            <a href="sofa.html">
+                                <h5>Devigue XXXL Tear Drop Bean Bag Cover</h5>
+                                <span>Tan, Black</span><br>
+                                <spna>3.6<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>854
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>1,999</s>
+                                    <small>57% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon" id="pro-animate02">
+                            <a href="diningtable.html" class="Best-product">
+                                <img src="img/table.webp">
+                            </a>
+
+                            <a href="diningtable.html">
+                                <h5>WOOD AFFAIR Solid Wood 6 Seater Dining Table</h5>
+                                <span>Finish Color-Waknut,DIY(Do-it-Yourself)</span><br>
+                                <spna>5.4<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>26,999
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>70,000</s>
+                                    <small>61% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon" id="pro-animate03">
+                            <a href="bedroom.html" class="Best-product">
+                                <img src="img/bed-luxury (4).webp">
+                            </a>
+
+                            <a href="bedroom.html">
+                                <h5>Amaze Shoppee intersection Well Shelves</h5>
+                                <span>Number of Shelves-5, Black</span><br>
+                                <spna>3.8<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>1,398
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>3,599</s>
+                                    <small>62% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon" id="pro-animate04">
+                            <a href="bedroom.html" class="Best-product">
+                                <img src="img/bed (3).webp">
+                            </a>
+
+                            <a href="bedroom.html">
+                                <h5>SAVYA HOME Leaherette Manual Recliner</h5>
+                                <span>Finish Color-Grey, Diy(Do-it-yourself)</span><br>
+                                <spna>4.2<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>20,289
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>37,999</s>
+                                    <small>46% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <!-- theard row -->
+                        <div class="col Product-icon" id="pro-animate05">
+                            <a href="bedroom.html" class="Best-product">
+                                <img src="img/luxury-bed (1).webp">
+                            </a>
+
+                            <a href="bedroom.html">
+                                <h5>Durofeel Elite 4 inch King PU foam Mattress</h5>
+                                <span>L x W: 78 inch x 72</span><br>
+                                <spna>3.2<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>5,765
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>8,999</s>
+                                    <small>35% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon" id="pro-animate06">
+                            <a href="diningtable.html" class="Best-product">
+                                <img src="img/deningteble (3).webp">
+                            </a>
+
+                            <a href="diningtable.html">
+                                <h5>Centuary Mattresses Sleepables Bonnell Firm Active</h5>
+                                <span>Vacuum Packed L x W:72 inch x 48 inch</span><br>
+                                <spna>3.2<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>6,845
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>12,010</s>
+                                    <small>43% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon" id="pro-animate07">
+                            <a href="bedroom.html" class="Best-product">
+                                <img src="img/bed-luxury (6).webp">
+                            </a>
+
+                            <a href="bedroom.html">
+                                <h5>SAVYA HOME Leaherette Manual Recliner</h5>
+                                <span>Finish Color-natural, Delivery Condtion Condition</span>
+                                <spna>3.2<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>21,499
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>38,999</s>
+                                    <small>44% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon" id="pro-animate08">
+                            <a href="diningtable.html" class="Best-product">
+                                <img src="img/table-dining (7).webp">
+                            </a>
+
+                            <a href="diningtable.html">
+                                <h5>Grassberry Dual Sided Ortho 6 inch Double High Resilied.</h5>
+                                <span>l x w: 27 inch x 48 inch</span><br>
+                                <spna>3.2<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>20,289
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>37,999</s>
+                                    <small>55% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <!-- fourth row -->
+                        <div class="col Product-icon" id="pro-animate09">
+                            <a href="sofa.html" class="Best-product">
+                                <img src="img/luxury-sofa (4).webp">
+                            </a>
+
+                            <a href="sofa.html">
+                                <h5>Grassberry Dual Sided Ortho 9 inch Double High Resilied.</h5>
+                                <span>l x w: 27 inch x 48 inch</span><br>
+                                <spna>5.2<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>50,999
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>1,70,000</s>
+                                    <small>71% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon" id="pro-animate001">
+                            <a href="sofa.html" class="Best-product">
+                                <img src="img/luxury-sofa (3).webp">
+                            </a>
+
+                            <a href="sofa.html">
+                                <h5>Centuary Mattresses Sleepables Bonnell Firm Active</h5>
+                                <span>Vacuum Packed L x W:72 inch x 48 inch</span><br>
+                                <spna>5<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>33,499
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>75,999</s>
+                                    <small>55% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon" id="pro-animate002">
+                            <a href="sofa.html" class="Best-product">
+                                <img src="img/luxury-sofa (2).webp">
+                            </a>
+
+                            <a href="sofa.html">
+                                <h5>Torque steffan Shape 8 Seater set with Cebter </h5>
+                                <span>Black,DIY(Do-it-Yourself)</span><br>
+                                <spna>5.1<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>29,999
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>75,999</s>
+                                    <small>60% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon" id="pro-animate003">
+                            <a href="sofa.html" class="Best-product">
+                                <img src="img/luxury-sofa (1).webp">
+                            </a>
+
+                            <a href="sofa.html">
+                                <h5>Torque Bristol U Shape 9 Seater Fabric Sofa set With 4.. </h5>
+                                <span>Light Grey,DIY(Do-it-Yourself)</span><br>
+                                <spna>5.0<i class="fa-solid fa-star" style="font-size:10px ;"></i></spna>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>50,999
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>1,70,000</s>
+                                    <small>70% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- ############################## all product  end **************** -->
+
+                <!-- ##################################### Bed Room ******************************* -->
+
+                <div id="Bedroom" class="container tab-pane fade">
+
+
+                    <div class="row row-cols-lg-4">
+                        <div class="col Product-icon">
+                            <a href="#furniture" class="Best-product">
+                                <img src="img/bedroom (1).webp">
+                            </a>
+
+                            <a href="#furniturel">
+                                <h5>Bedside Table Engineered Wood Side Table</h5>
+                                <span>Be the first to Review this product</span>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>2,299
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>9,999</s>
+                                    <small>77% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="almira.html" class="Best-product">
+                                <img src="img/bedroom (2).webp">
+                            </a>
+
+                            <a href="almira.html">
+                                <h5>GOD WISH 6+2 Fancy Layer 88130 With Pcket Wardrobe</h5>
+                                <span>Finish Color-BROWN,DIY(Do-it-yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>1,224
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>2499</s>
+                                    <small>51% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="" class="Best-product">
+                                <img src="img/bedroom (3).webp">
+                            </a>
+
+                            <a href="bedroom.html">
+                                <h5>Allie Wood Portugal Sheesham Solid Wood Bed...</h5>
+                                <span>Finish color-Walnit Finish, Pre-assembled</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>3,499
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>9,999</s>
+                                    <small>65% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="bedroom.html" class="Best-product">
+                                <img src="img/bedroom (4).webp">
+                            </a>
+
+                            <a href="bedroom.html">
+                                <h5>Wood Queen Box Bed</h5>
+                                <span>Finish Color-crem,Delivery Condition-Knock Down </span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>19,990
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>55,795</s>
+                                    <small>64% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="bedroom.html" class="Best-product">
+                                <img src="img/bedroom (5).webp">
+                            </a>
+
+                            <a href="bedroom.html">
+                                <h5>Book Shelf Particle Board Well Shelf</h5>
+                                <span>Number of shelves - 3 , white</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>1,070
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>2,099</s>
+                                    <small>49% off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="bedroom.html" class="Best-product">
+                                <img src="img/bedroom (6).webp">
+                            </a>
+
+                            <a href="bedroom.html">
+                                <h5>OnlineCraft ch2400 wooden well shelf 8 plus</h5>
+                                <span>Number of shelves-4</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>999
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>1,999</s>
+                                    <small>50% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="bedroom.html" class="Best-product">
+                                <img src="img/bedroom (7).webp">
+                            </a>
+
+                            <a href="bedroom.html">
+                                <h5>Wood TV Entertainment Unit</h5>
+                                <span>Finish Color-Walnut White,DIY(Do-it-Yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>4,179
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>19,999</s>
+                                    <small>79% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="bedroom.html" class="Best-product">
+                                <img src="img/bedroom (8).webp">
+                            </a>
+
+                            <a href="bedroom.html">
+                                <h5>Smarts coolection Wooden Plant Stand For Bacony Living..</h5>
+                                <span>Finish Color - brown, Pre-assembled</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>455
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>999</s>
+                                    <small>54% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="bedroom.html" class="Best-product">
+                                <img src="img/bed (4).webp">
+                            </a>
+
+                            <a href="bedroom.html">
+                                <h5>Smarts coolection Wooden Plant Stand For Bacony Living..</h5>
+                                <span>Finish Color - brown, Pre-assembled</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>455
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>999</s>
+                                    <small>54% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="bedroom.html" class="Best-product">
+                                <img src="img/bed (1).webp">
+                            </a>
+
+                            <a href="bedroom.html">
+                                <h5>Smarts coolection Wooden Plant Stand For Bacony Living..</h5>
+                                <span>Finish Color - brown, Pre-assembled</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>455
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>999</s>
+                                    <small>54% Off</small>
+                                </p>
+                            </a>
+                        </div>
+                        <div class="col Product-icon">
+                            <a href="bedroom.html" class="Best-product">
+                                <img src="img/bed-luxury (1).webp">
+                            </a>
+
+                            <a href="bedroom.html">
+                                <h5>Smarts coolection Wooden Plant Stand For Bacony Living..</h5>
+                                <span>Finish Color - brown, Pre-assembled</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>455
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>999</s>
+                                    <small>54% Off</small>
+                                </p>
+                            </a>
+                        </div>
+                        <div class="col Product-icon">
+                            <a href="bedroom.html" class="Best-product">
+                                <img src="img/bed-luxury (2).webp">
+                            </a>
+
+                            <a href="bedroom.html">
+                                <h5>Smarts coolection Wooden Plant Stand For Bacony Living..</h5>
+                                <span>Finish Color - brown, Pre-assembled</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>455
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>999</s>
+                                    <small>54% Off</small>
+                                </p>
+                            </a>
+                        </div>
+                        <div class="col Product-icon">
+                            <a href="bedroom.html" class="Best-product">
+                                <img src="img/bed-luxury (3).webp">
+                            </a>
+
+                            <a href="bedroom.html">
+                                <h5>Smarts coolection Wooden Plant Stand For Bacony Living..</h5>
+                                <span>Finish Color - brown, Pre-assembled</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>455
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>999</s>
+                                    <small>54% Off</small>
+                                </p>
+                            </a>
+                        </div>
+                        <div class="col Product-icon">
+                            <a href="bedroom.html" class="Best-product">
+                                <img src="img/bed-luxury (4).webp">
+                            </a>
+
+                            <a href="bedroom.html">
+                                <h5>Smarts coolection Wooden Plant Stand For Bacony Living..</h5>
+                                <span>Finish Color - brown, Pre-assembled</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>455
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>999</s>
+                                    <small>54% Off</small>
+                                </p>
+                            </a>
+                        </div>
+                        <div class="col Product-icon">
+                            <a href="bedroom.html" class="Best-product">
+                                <img src="img/bed (3).webp">
+                            </a>
+
+                            <a href="bedroom.html">
+                                <h5>Smarts coolection Wooden Plant Stand For Bacony Living..</h5>
+                                <span>Finish Color - brown, Pre-assembled</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>455
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>999</s>
+                                    <small>54% Off</small>
+                                </p>
+                            </a>
+                        </div>
+                        <div class="col Product-icon">
+                            <a href="bedroom.html" class="Best-product">
+                                <img src="img/bed-luxury (6).webp">
+                            </a>
+
+                            <a href="bedroom.html">
+                                <h5>Smarts coolection Wooden Plant Stand For Bacony Living..</h5>
+                                <span>Finish Color - brown, Pre-assembled</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>455
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>999</s>
+                                    <small>54% Off</small>
+                                </p>
+                            </a>
+                        </div>
+                        <div class="col Product-icon">
+                            <a href="bedroom.html" class="Best-product">
+                                <img src="img/bed-luxury (7).webp">
+                            </a>
+
+                            <a href="bedroom.html">
+                                <h5>Smarts coolection Wooden Plant Stand For Bacony Living..</h5>
+                                <span>Finish Color - brown, Pre-assembled</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>455
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>999</s>
+                                    <small>54% Off</small>
+                                </p>
+                            </a>
+                        </div>
+                        <div class="col Product-icon">
+                            <a href="bedroom.html" class="Best-product">
+                                <img src="img/bed-luxury (8).webp">
+                            </a>
+
+                            <a href="bedroom.html">
+                                <h5>Smarts coolection Wooden Plant Stand For Bacony Living..</h5>
+                                <span>Finish Color - brown, Pre-assembled</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>455
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>999</s>
+                                    <small>54% Off</small>
+                                </p>
+                            </a>
+                        </div>
+                        <div class="col Product-icon">
+                            <a href="bedroom.html" class="Best-product">
+                                <img src="img/bed-luxury (9).webp">
+                            </a>
+
+                            <a href="bedroom.html">
+                                <h5>Smarts coolection Wooden Plant Stand For Bacony Living..</h5>
+                                <span>Finish Color - brown, Pre-assembled</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>455
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>999</s>
+                                    <small>54% Off</small>
+                                </p>
+                            </a>
+                        </div>
+                        <div class="col Product-icon">
+                            <a href="bedroom.html" class="Best-product">
+                                <img src="img/bed-luxury (10).webp">
+                            </a>
+
+                            <a href="bedroom.html">
+                                <h5>Smarts coolection Wooden Plant Stand For Bacony Living..</h5>
+                                <span>Finish Color - brown, Pre-assembled</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>455
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>999</s>
+                                    <small>54% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- ##################################### Bed Room  end ******************************* -->
+
+                <!-- ##################################### Dening table *********************** -->
+
+                <div id="DiningTable" class="container tab-pane fade ">
+                    <div class="row row-cols-lg-4">
+                        <div class="col Product-icon">
+                            <a href="diningtable.html" class="Best-product">
+                                <img src="img/deningteble (1).webp">
+                            </a>
+
+                            <a href="diningtable.html">
+                                <h5>Studio Kook Dolce Wood 4 Seater Dining Table</h5>
+                                <span>Finish Color-Moonshine White , DIY(Do-it-Yourself)</span>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>15,163
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>26,419</s>
+                                    <small>42% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="diningtable.html" class="Best-product">
+                                <img src="img/deningteble (2).webp">
+                            </a>
+
+                            <a href="diningtable.html">
+                                <h5>SHAIMOON wOOD 6 Seater Dinig Table</h5>
+                                <span>Fnish Color-Brown,DIY(Do-it-Yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>8,939
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>18,000</s>
+                                    <small>50% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="diningtable.html" class="Best-product">
+                                <img src="img/deningteble (3).webp">
+                            </a>
+
+                            <a href="diningtable.html">
+                                <h5>Utkarsh Solid Wood 4 Seater Dining Table</h5>
+                                <span>Finish color-Finish Color-Walnut,PRE-assembled</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>14,899
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>31,485</s>
+                                    <small>52% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="diningtable.html" class="Best-product">
+                                <img src="img/diningtable-4.webp">
+                            </a>
+
+                            <a href="diningtable.html">
+                                <h5>Waywood Preminum Dining Room Furniture Sheesham Wood Woo..</h5>
+                                <span>Finish Color-Brown,DIY(Do-it-Yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>15,660
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>29,989</s>
+                                    <small>47% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="diningtable.html" class="Best-product">
+                                <img src="img/deningtable-5.webp">
+                            </a>
+
+                            <a href="diningtable.html">
+                                <h5>FLATU ART Solid Wood ^ Seater Dining Table</h5>
+                                <span>Finish Color- NATURAL,pre-assembled</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>23,699
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>25,999</s>
+                                    <small>8% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="diningtable.html" class="Best-product">
+                                <img src="img/deningteble (6).webp">
+                            </a>
+
+                            <a href="diningtable.html">
+                                <h5>Angel Furnitre Foldable Solid Wood 6 Seater Dining Tab..</h5>
+                                <span>Finish Color-Honey Finish, Pre-assembled</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>12,490
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>13,999</s>
+                                    <small>10% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="diningtable.html" class="Best-product">
+                                <img src="img/deningteble (7).webp">
+                            </a>
+
+                            <a href="diningtable.html">
+                                <h5>SPACEWOOD Engineered Wood tv Enterttainment Unit</h5>
+                                <span>Finish Color-BROWN,DIY(Do-it-Yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>1,932
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>2,499</s>
+                                    <small>22% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="diningtable.html" class="Best-product">
+                                <img src="img/deningteble (8).webp">
+                            </a>
+
+                            <a href="diningtable.html">
+                                <h5>Print Panda Floral & Bolanical Multicolor </h5>
+                                <span>Finish Color-Brown,DIY(Do-it-Yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>912
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>4,900</s>
+                                    <small>12% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="diningtable.html" class="Best-product">
+                                <img src="img/GST-table (2).webp">
+                            </a>
+
+                            <a href="diningtable.html">
+                                <h5>Print Panda Floral & Bolanical Multicolor </h5>
+                                <span>Finish Color-Brown,DIY(Do-it-Yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>412
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>4,900</s>
+                                    <small>23% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+
+                        <div class="col Product-icon">
+                            <a href="diningtable.html" class="Best-product">
+                                <img src="img/GST-table (7).webp">
+                            </a>
+
+                            <a href="diningtable.html">
+                                <h5>Angel Furnitre Foldable Solid Wood 6 Seater Dining Tab..</h5>
+                                <span>Finish Color-Brown,DIY(Do-it-Yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>714
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>9,900</s>
+                                    <small>79% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+
+                        <div class="col Product-icon">
+                            <a href="diningtable.html" class="Best-product">
+                                <img src="img/deningteble (2).webp">
+                            </a>
+
+                            <a href="diningtable.html">
+                                <h5>Print Panda Floral & Bolanical Multicolor </h5>
+                                <span>Finish Color-Brown,DIY(Do-it-Yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>3,912
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>4,900</s>
+                                    <small>87% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+
+                        <div class="col Product-icon">
+                            <a href="diningtable.html" class="Best-product">
+                                <img src="img/deningteble (2).webp">
+                            </a>
+
+                            <a href="diningtable.html">
+                                <h5>Print Panda Floral & Bolanical Multicolor </h5>
+                                <span>Finish Color-Brown,DIY(Do-it-Yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>2,912
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>4,900</s>
+                                    <small>60% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+
+                        <div class="col Product-icon">
+                            <a href="diningtable.html" class="Best-product">
+                                <img src="img/GST-table (6).webp">
+                            </a>
+
+                            <a href="diningtable.html">
+                                <h5>Print Panda Floral & Bolanical Multicolor </h5>
+                                <span>Finish Color-Brown,DIY(Do-it-Yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>2,900
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>4,900</s>
+                                    <small>30% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+
+                        <div class="col Product-icon">
+                            <a href="diningtable.html" class="Best-product">
+                                <img src="img/GST-table (3).webp">
+                            </a>
+
+                            <a href="diningtable.html">
+                                <h5>Print Panda Floral & Bolanical Multicolor </h5>
+                                <span>Finish Color-Brown,DIY(Do-it-Yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>2,999
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>4,900</s>
+                                    <small>60% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+
+                        <div class="col Product-icon">
+                            <a href="diningtable.html" class="Best-product">
+                                <img src="img/GST-table (2).webp">
+                            </a>
+
+                            <a href="diningtable.html">
+                                <h5>Print Panda Floral & Bolanical Multicolor </h5>
+                                <span>Finish Color-Brown,DIY(Do-it-Yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>3,902
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>4,900</s>
+                                    <small>90% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+
+                        <div class="col Product-icon">
+                            <a href="diningtable.html" class="Best-product">
+                                <img src="img/GST-table (18).webp">
+                            </a>
+
+                            <a href="diningtable.html">
+                                <h5>Print Panda Floral & Bolanical Multicolor </h5>
+                                <span>Finish Color-Brown,DIY(Do-it-Yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>923
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>4,900</s>
+                                    <small>20% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+
+                        <div class="col Product-icon">
+                            <a href="diningtable.html" class="Best-product">
+                                <img src="img/GST-table (17).webp">
+                            </a>
+
+                            <a href="diningtable.html">
+                                <h5>Print Panda Floral & Bolanical Multicolor </h5>
+                                <span>Finish Color-Brown,DIY(Do-it-Yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>783
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>4,900</s>
+                                    <small>49% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+
+                        <div class="col Product-icon">
+                            <a href="diningtable.html" class="Best-product">
+                                <img src="img/GST-table (16).webp">
+                            </a>
+
+                            <a href="diningtable.html">
+                                <h5>Print Panda Floral & Bolanical Multicolor </h5>
+                                <span>Finish Color-Brown,DIY(Do-it-Yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>50w
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>4,900</s>
+                                    <small>44% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+
+                        <div class="col Product-icon">
+                            <a href="diningtable.html" class="Best-product">
+                                <img src="img/GST-table (15).webp">
+                            </a>
+
+                            <a href="diningtable.html">
+                                <h5>Print Panda Floral & Bolanical Multicolor </h5>
+                                <span>Finish Color-Brown,DIY(Do-it-Yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>2,912
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>4,900</s>
+                                    <small>55% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+
+                        <div class="col Product-icon">
+                            <a href="diningtable.html" class="Best-product">
+                                <img src="img/GST-table (14).webp">
+                            </a>
+
+                            <a href="diningtable.html">
+                                <h5>Print Panda Floral & Bolanical Multicolor </h5>
+                                <span>Finish Color-Brown,DIY(Do-it-Yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>2,394
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>4,900</s>
+                                    <small>90% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+
+                        <div class="col Product-icon">
+                            <a href="diningtable.html" class="Best-product">
+                                <img src="img/GST-table (13).webp">
+                            </a>
+
+                            <a href="diningtable.html">
+                                <h5>Print Panda Floral & Bolanical Multicolor </h5>
+                                <span>Finish Color-Brown,DIY(Do-it-Yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>930
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>4,900</s>
+                                    <small>80% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+
+                        <div class="col Product-icon">
+                            <a href="diningtable.html" class="Best-product">
+                                <img src="img/GST-table (7).webp">
+                            </a>
+
+                            <a href="diningtable.html">
+                                <h5>Print Panda Floral & Bolanical Multicolor </h5>
+                                <span>Finish Color-Brown,DIY(Do-it-Yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>7,412
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>4,900</s>
+                                    <small>10% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+
+                        <div class="col Product-icon">
+                            <a href="diningtable.html" class="Best-product">
+                                <img src="img/table-dining (4).webp">
+                            </a>
+
+                            <a href="diningtable.html">
+                                <h5>Print Panda Floral & Bolanical Multicolor </h5>
+                                <span>Finish Color-Brown,DIY(Do-it-Yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>600
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>4,900</s>
+                                    <small>40% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+
+                        <div class="col Product-icon">
+                            <a href="diningtable.html" class="Best-product">
+                                <img src="img/GST-table (1).webp">
+                            </a>
+
+                            <a href="diningtable.html">
+                                <h5>Print Panda Floral & Bolanical Multicolor </h5>
+                                <span>Finish Color-Brown,DIY(Do-it-Yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>200
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>4,900</s>
+                                    <small>40% Off</small>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ##################################### Dening table end *********************** -->
+
+                <!-- ##################################### office chair Start ************************ -->
+
+                <div id="Office" class="container tab-pane fade ">
+                    <div class="row row-cols-lg-4">
+                        <div class="col Product-icon">
+                            <a href="oficechair.html" class="Best-product">
+                                <img src="img/officechair (1).webp">
+                            </a>
+
+                            <a href="oficechair.html">
+                                <h5>SAVYA HOME SAVYA Snipe Office Chair |</h5>
+                                <span>Red, DIY(Do-it-Yourself)</span>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>7,344
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>11,900</s>
+                                    <small>38% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="oficechair.html" class="Best-product">
+                                <img src="img/officechair (2).webp">
+                            </a>
+
+                            <a href="oficechair.html">
+                                <h5>Oakcraft Matrix Ergonomic With Height Handre.</h5>
+                                <span>Black ,DIY(Do-it-Yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>4,999
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>14,999</s>
+                                    <small>66% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="oficechair.html" class="Best-product">
+                                <img src="img/officechair (3).webp">
+                            </a>
+
+                            <a href="oficechair.html">
+                                <h5>Savya HOME Snipe Office Chair |</h5>
+                                <span>Black , DIY(DO-it-Yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>6,180
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>11,900</s>
+                                    <small>48% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="oficechair.html" class="Best-product">
+                                <img src="img/officechair (4).webp">
+                            </a>
+
+                            <a href="oficechair.html">
+                                <h5>GTEEN SOUL Jupiter GO HIgh Back</h5>
+                                <span>Black,Gray,DIY(Do-it-Yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>6,999
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>15436</s>
+                                    <small>54% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="oficechair.html" class="Best-product">
+                                <img src="img/officechair (5).webp">
+                            </a>
+
+                            <a href="oficechair.html">
+                                <h5>VIZOLT Mesh Office Adjustable Arm Chair </h5>
+                                <span>Black ,Diy(Do-it-Yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>3,207
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>9,999</s>
+                                    <small>67% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="oficechair.html" class="Best-product">
+                                <img src="img/officechair (6).webp">
+                            </a>
+
+                            <a href="oficechair.html">
+                                <h5>SAVYA HOME DELTA Fabric Office Executive Chair</h5>
+                                <span>Finish Color-Wenge,DIY(Do-it-Yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>2,799
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>10,000</s>
+                                    <small>72% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="oficechair.html" class="Best-product">
+                                <img src="img/officechair (7).webp">
+                            </a>
+
+                            <a href="oficechair.html">
+                                <h5>Trevi Venus Magic Mesh Office Executive chair</h5>
+                                <span>Grey,Black,DIY(Do-it-Yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>4,390
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>15,999</s>
+                                    <small>72% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="oficechair.html" class="Best-product">
+                                <img src="img/officechair (8).webp">
+                            </a>
+
+                            <a href="oficechair.html">
+                                <h5>Beaatho Veroma Mid Back Study Metal Base Nylon Mesh Re..</h5>
+                                <span>Green, Diy(Do-it)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>3,343
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>5,999</s>
+                                    <small>44% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="oficechair.html" class="Best-product">
+                                <img src="img/officechair (1).webp">
+                            </a>
+
+                            <a href="oficechair.html">
+                                <h5>SAVYA HOME SAVYA Snipe Office Chair |</h5>
+                                <span>Red, DIY(Do-it-Yourself)</span>
+                                <p> <i class="fa-solid fa-indian-rupee-sign"></i>7,344
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>11,900</s>
+                                    <small>38% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="oficechair.html" class="Best-product">
+                                <img src="img/officechair (2).webp">
+                            </a>
+
+                            <a href="oficechair.html">
+                                <h5>Oakcraft Matrix Ergonomic With Height Handre.</h5>
+                                <span>Black ,DIY(Do-it-Yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>4,999
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>14,999</s>
+                                    <small>66% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="oficechair.html" class="Best-product">
+                                <img src="img/officechair (3).webp">
+                            </a>
+
+                            <a href="oficechair.html">
+                                <h5>Savya HOME Snipe Office Chair |</h5>
+                                <span>Black , DIY(DO-it-Yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>6,180
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>11,900</s>
+                                    <small>48% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="oficechair.html" class="Best-product">
+                                <img src="img/officechair (4).webp">
+                            </a>
+
+                            <a href="oficechair.html">
+                                <h5>GTEEN SOUL Jupiter GO HIgh Back</h5>
+                                <span>Black,Gray,DIY(Do-it-Yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>6,999
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>15436</s>
+                                    <small>54% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="oficechair.html" class="Best-product">
+                                <img src="img/officechair (5).webp">
+                            </a>
+
+                            <a href="oficechair.html">
+                                <h5>VIZOLT Mesh Office Adjustable Arm Chair </h5>
+                                <span>Black ,Diy(Do-it-Yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>3,207
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>9,999</s>
+                                    <small>67% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="oficechair.html" class="Best-product">
+                                <img src="img/officechair (6).webp">
+                            </a>
+
+                            <a href="oficechair.html">
+                                <h5>SAVYA HOME DELTA Fabric Office Executive Chair</h5>
+                                <span>Finish Color-Wenge,DIY(Do-it-Yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>2,799
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>10,000</s>
+                                    <small>72% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="oficechair.html" class="Best-product">
+                                <img src="img/officechair (7).webp">
+                            </a>
+
+                            <a href="oficechair.html">
+                                <h5>Trevi Venus Magic Mesh Office Executive chair</h5>
+                                <span>Grey,Black,DIY(Do-it-Yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>4,390
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>15,999</s>
+                                    <small>72% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                        <div class="col Product-icon">
+                            <a href="oficechair.html" class="Best-product">
+                                <img src="img/officechair (6).webp">
+                            </a>
+
+                            <a href="oficechair.html">
+                                <h5>SAVYA HOME DELTA Fabric Office Executive Chair</h5>
+                                <span>Finish Color-Wenge,DIY(Do-it-Yourself)</span>
+                                <p><i class="fa-solid fa-indian-rupee-sign"></i>2,799
+                                    <s> <i class="fa-solid fa-indian-rupee-sign"></i>10,000</s>
+                                    <small>72% Off</small>
+                                </p>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- ##################################### office  end  ************************ -->
+
+            </div>
+        </div>
+    </div>
+
+    <!-- **************************************** Best products Section End ******************************************** -->
+    <br><br><br>
+    <!-- **************************************** Furniture Ad  ******************************************** -->
+    <div class="furniture-ad" id="video-animate"> 
+        <iframe width="80%" height="515" src="https://www.youtube.com/embed/vnPh4y6lXbs?si=ob6UbE4yBBmdFZGv"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+
+    <!-- **************************************** Furniture Ad   end ******************************************** -->
+    <h3 id="cate-animate">Popular Categories</h3>
+    <div class="container col-8" id="luxury">
+        <div class="row row-cols-lg-2">
+
+            <div class="col luxury-img" id="cate-animate1">
+                <a href="bedroom.html">
+                    <img src="img/new-prodcuts (4).jpg">
+                </a>
+            </div>
+
+
+            <div class="col luxury-img" id="cate-animate2">
+                <a href="sofa.html">
+                    <img src="img/new-prodcuts (3).jpg">
+                </a>
+            </div>
+
+            <div class="col luxury-img" id="cate-animate3">
+                <a href="diningtable.html">
+                    <img src="img/tables.webp">
+                </a>
+            </div>
+            <div class="col luxury-img" id="cate-animate4">
+                <a href="sofa.html">
+                    <img src="img/new-prodcuts (2).jpg">
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ********* subscribe ********** -->
+
+    <div class="container subscribe" id="subs-anim">
+        <form class="sub-text">
+            <input type="text" placeholder="    Enter Your Email Address">
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+
+    <!-- ********* subscribe  end ********** -->
+
+    <!-- ***************************** Footer Section Start *************************** -->
+    <div class="container-fluid" id="footer">
+        <div class="row">
+
+            <div class=" col footer-text" id="footer-anim1">
+                <ul style="list-style: none;">
+                    <th>Contact Us</th>
+                    <li>Phone: 09544644999</li>
+                    <li>Need help or have a question?</li>
+                    <li>Contact us at: ingo@rotalfurniturnitureonline.in</li>
+                    <li>Royal tower Areacode Road, Mukkam, Calicut,, Kozhikode (Calicut),India,673602</li>
+                </ul>
+            </div>
+
+            <div class="col footer-text" id="footer-anim2">
+                <ul>
+                    <th>Company</th>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="location.html">Store Locations</a></li>
+                    <li><a href="signup.html">SignUp...............................................</a></li>
+                </ul>
+            </div>
+
+            <div class="col footer-text" id="footer-anim3">
+                <ul>
+                    <th>Infomation</th>
+                    <li><a href="delifry.html">Delivery Information</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="Refund.html">Refund & Cancellation Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 footer-text1" id="footer-anim4">
+                <ul style="list-style: none;">
+                    <li class="footer-link">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://about.twitter.com/en"><i class="fa-brands fa-twitter"></i></a>
+                        <small> Copyright © 2023 - longshore ventures INC</small>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ***************************** Footer Section end *************************** -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

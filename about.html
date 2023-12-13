@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about us</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="CSS/Furniture.css">
+    <link rel="stylesheet" href="CSS/bedroom.css">
+    <link rel="stylesheet" href="CSS/about.css">
+    <link rel="icon" type="icon" href="img/my-icon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+
+<body class="bg-">
+    <!-- ************************************ Header Section Start ***************************** -->
+
+    <div class="container-fluid" id="Header">
+        <div class="row ">
+            <div class="col">
+                <nav class="navbar justify-content-center">
+
+                    <a class="navbar-brand" href="http://127.0.0.1:5500/Furniture.html">
+                        <img src="img/royallogo-1.png">
+                    </a>
+
+
+                    </h6>
+
+                    <div class="logo">
+
+                        <a href="Furniture.html" class="logo-text">HOME</a>
+                        <a href="bedroom.html" class="logo-text">BEDROOM</a>
+                        <a href="diningtable.html" class="logo-text">DINING TABLE</a>
+                        <a href="oficechair.html" class="logo-text">OFFICE CHAIR</a>
+                        <a href="contact.html" class="logo-text">CONTACT</a>
+
+                    </div>
+
+                    <!-- #################### -->
+
+                    <form class="d-flex " role="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input class="control  me-2" type="search" placeholder="  Search" aria-label="Search">
+                    </form>
+
+                    <!-- modal button Start -->
+                    <div class="logo-icon">
+                        <button type="button" class="btn sign-in " data-bs-toggle="modal" data-bs-target="#myModal">
+                            <span> <i class="fa-solid fa-user"></i> Sign in <i class="fa-solid fa-sort-down"></i></span>
+
+                        </button>
+                    </div>
+
+
+                    <!-- offcanvas Start -->
+
+                    <button class="btn d-lg-none menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <div class="offcanvas offcanvas-end" id="demo">
+                        <div class="offcanvas-header">
+                            <img src="img/furniture-logo-design-new4-removebg-preview.png">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="modal-body">
+
+                                <div class="offcanvas-line">
+                                    <a href="Furniture.html"> HOME</a>
+                                </div>
+
+                                <div class="offcanvas-line">
+                                    <a href="bedroom.html"> BEDROOM</a>
+                                </div>
+
+                                <div class="offcanvas-line">
+                                    <a href="diningtable.html">DINING TABLE</a>
+                                </div>
+
+                                <div class="offcanvas-line">
+                                    <a href="oficechair.html">OFFICE CHAIR</a>
+                                </div>
+
+                                <div class="offcanvas-line">
+                                    <a href="contact.html">CONTACT</a>
+                                </div>
+
+                            </div>
+
+                            <!-- offcanvas start -->
+
+                            <button type="button" class="btn sign-up-phone btn-light" data-bs-toggle="modal"
+                                data-bs-target="#myModal1">
+                                <i class="fa-solid fa-user"></i> <span>Sgin Up</span><i
+                                    class="fa-solid fa-sort-down"></i>
+                            </button>
+
+                            <!-- offcanvas end -->
+
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title"><i class="fa-solid fa-user"></i> Login & Signup</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <form method="post">
+                        <div class="mb-3 mt-3">
+                            <div class="form-text">
+                                <p>Username or email address</p>
+                            </div>
+                            <input type="text" class="form-control" id="uname" required>
+
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-text">
+                                <p>Password
+                                    <a href="" class="forget">
+                                        Forget Password?
+                                    </a>
+                                </p>
+                            </div>
+                            <input type="password" class="form-control" id="pwd" name="pswd" required>
+
+                            <div class="invalid-feedback">Please fill out this field.</div><br>
+
+                            <input type="checkbox" name="c1"> Remember Me
+                        </div>
+                        <div class="form-check mb-3">
+
+                            <button type="submit" class="btn btn-primary text-light submit-icon ">Log in</button>
+
+                            <a href="signup.html" class="sign-2">
+                                <p>Sign up</p>
+                            </a>
+
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- modal end-->
+
+    <!-- The offcanvas -->
+    <div class="modal" id="myModal1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title"><i class="fa-solid fa-user"></i> Login & Signup</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <form method="post">
+                        <div class="mb-3 mt-3">
+                            <div class="form-text">
+                                <p>Username or email address</p>
+                            </div>
+                            <input type="text" class="form-control" id="uname" required>
+
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-text">
+                                <p>Password <a href="" class="forget">
+                                        Forget Password?
+                                    </a>
+                                </p>
+                            </div>
+                            <input type="password" class="form-control" id="pwd" name="pswd" required>
+
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="form-check mb-3">
+
+                            <button type="submit" class="btn btn-primary submit-icon">Log in</button>
+
+                            <a href="signup.html" class="sign-2">
+                                <p>Sign up</p>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- offcanvas end -->
+
+    <!-- *************************** Header Section end *********************** -->
+
+    <!-- *************************** Banner Section Start *********************** -->
+    <div class="ban-about">
+        <img src="img/about (1).jpeg">
+    </div>
+    <!-- *************************** Banner Section End *********************** -->
+    <br><br>
+    <div class="container text">
+        <h2>Welcome To ROYAL FURNISHING</h2>
+        <p>is the leading Furnishing Dealer in Ernakulam. We are here since 1967 in this industry. In these 53 years of
+            our experience, we always focus on our customer’s satisfaction. Through our passion and experience in this
+            industry, we are providing the most innovative designs of furniture and furnishing your home and that makes
+            your home glorious.
+
+            Last 53 years of experience, we are very thankful to every customer for forgiving as the support.</p>
+    </div>
+
+    <!-- *************************** showrrom Section Start *********************** -->
+
+    <div class="container" id="banner-box">
+        <h3>OUR SHOWROOM</h3><br>
+        <div class="row py-3">
+            <div class="col">
+                <div id="mycarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active" data-bs-interval="3000">
+
+                            <a href="sofa.html">
+                                <h1 id="#"></h1> <img src="img/sop-royal (1).jpg" alt="" class="d-block w-100">
+                            </a>
+                            <div class="carousel-caption shop-now">
+                            </div>
+                        </div>
+
+                        <div class="carousel-item " data-bs-interval="3000">
+
+                            <a href="bedroom.html">
+                                <img src="img/sop-royal (2).jpg" alt="" class="d-block w-100">
+                            </a>
+                        </div>
+
+                        <div class="carousel-item " data-bs-interval="3000">
+
+                            <a href="diningtable.html">
+                                <img src="img/sop-royal (3).jpg" alt="" class="d-block w-100">
+                            </a>
+                        </div>
+
+                        <a href="#mycarousel" class="carousel-control-prev" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a href="#mycarousel" class="carousel-control-next" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- *************************** shoeroom Section End *********************** -->
+
+    <br><br><br>
+    <!-- **************************************** Furniture Ad  ******************************************** -->
+    <div class="furniture-ad">
+        <iframe width="50%" height="400" src="https://www.youtube.com/embed/pnfvhpQYI8w?si=q-bPqjwQRGi1mWKo"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+
+        </iframe>
+    </div>
+
+    <!-- **************************************** Furniture Ad   end ******************************************** -->
+
+    <!-- ********************** about text ************************** -->
+    <br><br><br><br><br>
+    <div class="container text">
+
+        <h2>Royal Furniture - India's Favourite Home Furnishings</h2>
+        <p>Royal Furniture is a leading name in the country, mainly in the furniture industry. Learn more about us and
+            the products and services, such as home furnishings, office equipment, lifestyle, and health. The products
+            offered by Royal Furniture are available at an affordable price. The standard of the products and services
+            is unmatched in quality, and we are committed to ensuring that all our clients get the best out of their
+            money. We understand the importance of your time because we know how much your hard-earned money matters to
+            you, and hence, we are always keen on providing you with the best services at a reasonable rate.
+        </p>
+
+        <h2>Know about our company</h2>
+        <p>Royal Furniture is a company that has been in the furniture business for more than 35 years now. We are proud
+            to offer our customers some of the best furniture products in India, and our range of furniture includes
+            sofas, beds, chairs, tables, and other home furnishing items. We have a team of experienced specialists who
+            are always keen to help our customers choose the perfect furniture product. We also offer a wide range of
+            delivery options, so you can ensure that your order will arrive quickly and in excellent condition.
+        </p>
+
+        <p>So whether you're looking for traditional Indian furniture or something more contemporary, we have something
+            for you. Come and see us at our showroom or shop online today!
+        </p>
+
+        <h2>Our History</h2>
+        <p>The company manufactures a wide range of home furnishings, including sofas, beds, tables, chairs, lamps, and
+            other accessories. Royal Furniture also produces outdoor furnishings such as garden furniture, benches, and
+            swings. The company's products are made from natural wood and natural fabrics. The company's philosophy is
+            "to use only the best quality materials so that our products can be enjoyed for many years."
+        </p>
+
+        <h2>Our Story</h2>
+        <p>Royal Furniture is a household name in India, and for a good reason. They make high-quality furniture that is
+            both stylish and practical. Their furniture is made to last, and their pieces are sure to complement any
+            home decor. From beds to chairs, tables to lamps, Royal Furniture has everything you need to create a chic
+            and comfortable space in your home. Plus, their prices are unbeatable! RoyalFurniture has you covered
+            whether you're looking for traditional furniture or something more modern and cutting-edge.
+        </p>
+
+        <p>Their pieces can be used daily, or you can find them at home in your living room, bedroom, or even the dining
+            room. However you choose to use their products, you can count on Royal Furniture for high-quality furniture
+            that will last for years. That's why Royal Furniture is proud to offer customers an extensive range of home
+            furniture at unbeatable prices. Royal Furniture has something for every lifestyle, from dining tables and
+            chairs, daybeds and sofas, bedding sets, and even kitchen and bathroom accessories. Order from the comfort
+            of your own home, or have an expert in-house design team take care of it for you. Whatever you choose to do
+            when it comes to purchasing high-quality furniture from Royal Furniture, you can be sure that you're getting
+            well-made furniture that will last for years to come.
+        </p>
+
+        <h2>What do we produce?</h2>
+        <p>Royal Furniture, India's favorite home furnishings, is a complete line of furniture products that offers a
+            unique design and style. We specialize in producing high-quality furniture that will enhance the look and
+            feel of any home. Our products are made from the finest materials and are designed with your comfort in
+            mind. We have you covered whether you're looking for traditional furniture or something more modern and
+            chic. Please browse our selection today and find the perfect piece to add character and elegance to your
+            home.
+        </p>
+
+        <h2>Who is Royal Furniture famous at this time?</h2>
+        <p>Royal Furniture is one of the leading furniture manufacturing companies in India. The company has a wide
+            range of products that are loved by people all over the world. It is not just a furniture manufacturer but
+            also an art and lifestyle brand.
+        </p>
+
+        <h2>What are the reasons for this popularity?</h2>
+        <p>Some of the reasons for Royal Furniture's popularity are its unique designs, high-quality materials, and
+            excellent customer service. The company always puts customer satisfaction first and ensures that its
+            products meet the highest standards.
+        </p>
+
+        <h2>What can you buy from Royal Furniture?</h2>
+        <p>There are a variety of products that you can buy from Royal Furniture. These products include furniture, home
+            accessories, bedding, curtains, etc. You can even find exclusive collections made just for Royal Furniture
+            buyers. Whatever your needs may be, you're sure to find something unique at Royal Furniture.
+        </p>
+
+        <h2>What makes our furniture so special and demandable in India?</h2>
+        <p>For many years now, Royal Furniture has been a favorite choice of Indians for home furnishing. Apart from
+            being stylish, our furniture is also easy to maintain and affordable. Furthermore, our products are made
+            from high-quality materials that are durable and long-lasting. This makes Royal Furniture one of India's
+            most preferred choices for home furnishing.
+        </p>
+
+        <p>Some of the reasons why Royal Furniture continues to be popular include our wide range of products, including
+            beds, sofas, chairs, table sets, wardrobes, and chests. Additionally, we have a wide variety of designs and
+            colors, making it easy for people to find the right furniture for their homes. Our furniture is also
+            affordable, making it an ideal choice for people on a budget. Moreover, Royal Furniture is made in India, an
+            exceptional product. India is known for its quality craftsmanship, which is evident in our furniture
+            products. We take great care in choosing the best materials for our products, and we make sure that each of
+            our pieces is thoroughly tested before it is released to the market.
+        </p>
+
+        <p>We believe that our products deserve the best possible treatment, and that's why we use only top-grade wood
+            and fabrics. Our goal is to make Royal furniture become a part of your home, enhancing the beauty of your
+            space without compromising on its practicality. We are committed to providing our customers with the highest
+            quality products and services. If you'd like to find out more about Royal Furniture products or place an
+            order, please don't hesitate to contact us!
+        </p>
+    </div>
+
+    <!-- ***************************** about text end ****************************-->
+
+
+
+    <!-- ***************************** similar products ****************************-->
+
+    <div class="container-fluid" id="similar">
+        <div class="div" ><h2>More to Discover</h2></div>
+
+        <div class="row row-cols-lg-5 row-cols-sm-2">
+
+            <div class="col Product-icon simi">
+                <a href="" class="Best-product">
+                    <img src="img/bag-cover.webp">
+                </a>
+
+                <a href="">
+                    <h5>Devigue XXXL Tear Drop</h5>
+                    <span>Tan, Black</span>
+                    <p><i class="fa-solid fa-indian-rupee-sign"></i>854
+                        <button class="buy">BUY NOW</button>
+                    </p>
+                </a>
+            </div>
+
+            <div class="col Product-icon simi">
+                <a href="" class="Best-product">
+                    <img src="img/officechair (1).webp">
+                </a>
+
+                <a href="">
+                    <h5>SAVYA HOME Office Chair |</h5>
+                    <span>Red, DIY(Do-it-Yourself)</span>
+                    <p> <i class="fa-solid fa-indian-rupee-sign"></i>7,344
+                        <button class="buy">BUY NOW</button>
+
+                    </p>
+                </a>
+            </div>
+
+            <div class="col Product-icon simi">
+                <a href="" class="Best-product">
+                    <img src="img/sofa-2.webp">
+                </a>
+
+                <a href="">
+                    <h5>Icush Wooden Well Mounted</h5>
+                    <span>Finish Color-brown , DIY(Do-it-Yourself)</span>
+                    <p> <i class="fa-solid fa-indian-rupee-sign"></i>10,527
+                        <button class="buy">BUY NOW</button>
+                    </p>
+                </a>
+            </div>
+
+            <div class="col Product-icon simi">
+                <a href="" class="Best-product">
+                    <img src="img/bed (4).webp">
+                </a>
+
+                <a href="">
+                    <h5>wo Home Mourya Box Bed</h5>
+                    <span>Finish Color-Waknut,DIY(Do-it-Yourself)</span>
+                    <p><i class="fa-solid fa-indian-rupee-sign"></i>45,460
+                        <button class="buy">BUY NOW</button>
+                    </p>
+                </a>
+            </div>
+
+            <div class="col Product-icon simi">
+                <a href="" class="Best-product">
+                    <img src="img/table.webp">
+                </a>
+
+                <a href="">
+                    <h5>Solid 6 Seater Dining Table</h5>
+                    <span>Finish Color-Waknut,DIY(Do-it-Yourself)</span>
+                    <p><i class="fa-solid fa-indian-rupee-sign"></i>26,999
+                        <button class="buy">BUY NOW</button>
+                    </p>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ***************************** similar products end ****************************-->
+
+
+     <!-- ***************************** Footer Section Start *************************** -->
+     <div class="container-fluid" id="footer">
+        <div class="row">
+
+            <div class=" col footer-text">
+                <ul style="list-style: none;">
+                    <th>Contact Us</th>
+                    <li>Phone: 09544644999</li>
+                    <li>Need help or have a question?</li>
+                    <li>Contact us at: ingo@rotalfurniturnitureonline.in</li>
+                    <li>Royal tower Areacode Road, Mukkam, Calicut,, Kozhikode (Calicut),India,673602</li>
+                </ul>
+            </div>
+
+            <div class="col footer-text">
+                <ul>
+                    <th>Company</th>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="location.html">Store Locations</a></li>
+                    <li><a href="signup.html">SignUp...............................................</a></li>
+                </ul>
+            </div>
+
+            <div class="col footer-text">
+                <ul>
+                    <th>Infomation</th>
+                    <li><a href="delifry.html">Delivery Information</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="Refund.html">Refund & Cancellation Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="col-12 footer-text1">
+                <ul style="list-style: none;">
+                    <li class="footer-link">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://about.twitter.com/en"><i class="fa-brands fa-twitter"></i></a>
+                        <small> Copyright © 2023 - longshore ventures INC</small>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ***************************** Footer Section end *************************** -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refund & Cancellation Policy</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="CSS/Furniture.css">
+    <link rel="stylesheet" href="CSS/bedroom.css">
+    <link rel="stylesheet" href="CSS/about.css">
+    <link rel="icon" type="icon" href="img/my-icon.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+
+<body class="bg-">
+    <!-- ************************************ Header Section Start ***************************** -->
+
+    <div class="container-fluid" id="Header">
+        <div class="row ">
+            <div class="col">
+                <nav class="navbar justify-content-center">
+
+                    <a class="navbar-brand" href="http://127.0.0.1:5500/Furniture.html">
+                        <img src="img/royallogo-1.png">
+                    </a>
+
+
+                    </h6>
+
+                    <div class="logo">
+
+                        <a href="Furniture.html" class="logo-text">HOME</a>
+                        <a href="bedroom.html" class="logo-text">BEDROOM</a>
+                        <a href="diningtable.html" class="logo-text">DINING TABLE</a>
+                        <a href="oficechair.html" class="logo-text">OFFICE CHAIR</a>
+                        <a href="contact.html" class="logo-text">CONTACT</a>
+
+                    </div>
+
+                    <!-- #################### -->
+
+                    <form class="d-flex " role="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input class="control  me-2" type="search" placeholder="  Search" aria-label="Search">
+                    </form>
+
+                    <!-- modal button Start -->
+                    <div class="logo-icon">
+                        <button type="button" class="btn sign-in " data-bs-toggle="modal" data-bs-target="#myModal">
+                            <span> <i class="fa-solid fa-user"></i> Sign in <i class="fa-solid fa-sort-down"></i></span>
+
+                        </button>
+                    </div>
+
+
+                    <!-- offcanvas Start -->
+
+                    <button class="btn d-lg-none menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+
+                    <div class="offcanvas offcanvas-end" id="demo">
+                        <div class="offcanvas-header">
+                            <img src="img/furniture-logo-design-new4-removebg-preview.png">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="modal-body">
+
+                                <div class="offcanvas-line">
+                                    <a href="Furniture.html"> HOME</a>
+                                </div>
+
+                                <div class="offcanvas-line">
+                                    <a href="bedroom.html"> BEDROOM</a>
+                                </div>
+
+                                <div class="offcanvas-line">
+                                    <a href="diningtable.html">DINING TABLE</a>
+                                </div>
+
+                                <div class="offcanvas-line">
+                                    <a href="oficechair.html">OFFICE CHAIR</a>
+                                </div>
+
+                                <div class="offcanvas-line">
+                                    <a href="contact.html">CONTACT</a>
+                                </div>
+
+                            </div>
+
+                            <!-- offcanvas start -->
+
+                            <button type="button" class="btn sign-up-phone btn-light" data-bs-toggle="modal"
+                                data-bs-target="#myModal1">
+                                <i class="fa-solid fa-user"></i> <span>Sgin Up</span><i
+                                    class="fa-solid fa-sort-down"></i>
+                            </button>
+
+                            <!-- offcanvas end -->
+
+                        </div>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title"><i class="fa-solid fa-user"></i> Login & Signup</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <form method="post">
+                        <div class="mb-3 mt-3">
+                            <div class="form-text">
+                                <p>Username or email address</p>
+                            </div>
+                            <input type="text" class="form-control" id="uname" required>
+
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-text">
+                                <p>Password
+                                    <a href="" class="forget">
+                                        Forget Password?
+                                    </a>
+                                </p>
+                            </div>
+                            <input type="password" class="form-control" id="pwd" name="pswd" required>
+
+                            <div class="invalid-feedback">Please fill out this field.</div><br>
+
+                            <input type="checkbox" name="c1"> Remember Me
+                        </div>
+                        <div class="form-check mb-3">
+
+                            <button type="submit" class="btn btn-primary text-light submit-icon ">Log in</button>
+
+                            <a href="signup.html" class="sign-2">
+                                <p>Sign up</p>
+                            </a>
+
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- modal end-->
+
+    <!-- The offcanvas -->
+    <div class="modal" id="myModal1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title"><i class="fa-solid fa-user"></i> Login & Signup</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+
+                    <form method="post">
+                        <div class="mb-3 mt-3">
+                            <div class="form-text">
+                                <p>Username or email address</p>
+                            </div>
+                            <input type="text" class="form-control" id="uname" required>
+
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-text">
+                                <p>Password <a href="" class="forget">
+                                        Forget Password?
+                                    </a>
+                                </p>
+                            </div>
+                            <input type="password" class="form-control" id="pwd" name="pswd" required>
+
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="form-check mb-3">
+
+                            <button type="submit" class="btn btn-primary submit-icon">Log in</button>
+
+                            <a href="signup.html" class="sign-2">
+                                <p>Sign up</p>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- offcanvas end -->
+
+    <!-- *************************** Header Section end *********************** -->
+
+    <!-- ********************** about text ***** -->
+    <br><br><br><br><br>
+    <div class="container text">
+        <h1>Refund & Cancellation Policy</h1><br><br>
+
+
+        <p>At Royal Furniture , we have made it our mission to give you a wide collection of the best in everything at
+            unbelievable prices! We want to make your buying a fabulous experience and we are committed to doing
+            everything possible to do so!
+        </p>
+        <small>* Calling our customer no. +91-8826299884</small><br>
+        <small>* Emailing us at info@Royalfurniture.com</small><br><br>
+
+
+
+        <h4>CONDITIONS FOR CANCELLATION</h4>
+        <small>Cancellations on order placed are allowed only before order is shipped from Royal furniture warehouse,
+            we will accept the cancellation with deduction of Payment Gateway processing and service fee of 2% on the
+            paid value for the transaction. For more details please contact our customer care to assist with the
+            same.</small>
+        <p>No cancellations are allowed once the order is shipped from Royal Furniture warehouse. In case of any
+            exception, at the sole discretion of Royal Furniture, two-way shipping charges will be borne by the
+            customer. For more details please contact our customer care to assist with the same.</p>
+        <p>In case of cancellations, no refund will be made for Part Payment orders that contain products from all
+            categories, the advance amount will be considered as cancellation charges. For more details please contact
+            our customer care to assist with the same.
+        </p>
+        <p>Please notify us of receipt of a Damaged/ Defective product maximum within 24 hours of delivery with a proof
+            i.e. with images or videos. For more details please contact our customer care to assist with the same.</p>
+        <p>Please do not accept any products with damaged/ tampered packaging (excludes normal wear & tear and markings
+            on the outer surface of the package, acceptable in the transit process).</p>
+
+        <h4>Products/ Items should be UNUSED.</h4>
+        <small>Products should be returned in their original packaging along with the original price tags, labels, and
+            invoices.</small>
+
+        <p>It is advised that the return packets should be strongly and adequately packaged so that there is no damage
+            to goods in transit.</p>
+        <p>Any products damaged post delivery to the customer, shall not be accepted for return.</p>
+
+        <h4>CONDITIONS FOR RETURN:</h4>
+        <small>Items can only be returned in case, It has been delivered in damaged condition or there is some issue
+            with the finishing of the product.</small>
+        <p>*Please note: We do not allow returns on the products sold in sale or discount. Only regular price items will
+            be eligible for returns until and unless they're unused and have not been removed from its original
+            packaging.</p>
+        <p>Royal Furniture has all rights to reject returns for any order.</p>
+        <p>Returns are only accepted for the following reasons:</p>
+        <li>Damaged Products</li>
+        <li> Manufacturing defects</li>
+        <li> Incomplete Products</li>
+        <li>Incorrect Product</li><br>
+
+        <h4>PROCESS FOR INITIATING RETURN:</h4>
+        <p>If you're a guest user or a registered user, then please contact us to initiate your return request.</p>
+        <p>Royal Furniture will pick up the product that you wish to return from your doorstep; However, locations
+            where we do not have reverse pickup facility, We may request you to self ship the product to us or
+            dispose/destroy them.</p>
+        <p>Please note: Customized items cannot be returned.</p>
+
+        <h4>CONDITIONS FOR REFUNDS:</h4>
+        <small>Refunds will be processed within 7 business days* of receipt of the product by Royal Furniure, provided
+            goods are received in acceptable condition, as dispatched from our warehouse. Refund method will be based on
+            the mode of order payment, as follows-</small>
+        <p>Orders paid for through credit/ debit card will be refunded back to the credit/ debit card
+            Orders paid for through net banking accounts will be credited back to the bank account
+            Orders paid for through Royal Furniture Gift Certificates/ Vouchers will be refunded in form of a fresh
+            Gift Certificate/ Voucher of the same value
+            Orders paid for through other modes of payment will be refunded either through an account payee cheque in
+            the customer's name (as given in "billing name" at time of purchase), or an online transfer via NEFT to
+            customer's bank account</p>
+        <p>If you have made any partial payment/token amount for your order to be shipped on Cash On Delivery and in any
+            case, it was undelivered or you refused the delivery of your order than your token amount will be freezed
+            and cannot be refunded to you until next order. **Please note: you will be able to use that amount in your
+            next order and your next order will be accepted only if you make full advance payment for your order amount
+            and token amount will be adjusted accordingly. For more information, Please contact our support team at
+            Info@Royalfurniutre.com</p>
+        <p>* Please follow up with your respective bank/ card issuer post completion of refunds process by Royal
+            Furniture, to check on reflection of funds in your account. In case of cheque refunds, additional time may
+            be required to ship the cheque to the customer.</p>
+        <p>If your return request is accepted, Return will be processed within 48 hours. Depending on the mode of
+            payment you used, Banks and Payment Gateways, Usually takes 7-10 working days to credit the amount to your
+            account.</p>
+        <P>In case, You have used your wallet credits to make purchase, Than your used wallet credits will be reimbursed
+            to your wallet.</P>
+        <p>Certain instances in which returns cannot be accepted</p>
+        <p>The product is damaged due to misuse
+            The product being incidentally damaged due to non-reporting of an instance of the previous malfunctioning
+            Any sort of damage or defect which is not warranted by the manufacturer Any product which is not returned
+            with all the original packaging and all the accessories inclusive of box & packaging from manufacturer's
+            side, if any, and each and every item originally included with the product(s) delivered.</p>
+    </div>
+
+    <!-- ***************************** similar products ****************************-->
+
+    <div class="container-fluid" id="similar">
+        <div class="div" ><h2>More to Discover</h2></div>
+              
+            <div class="row row-cols-lg-5 row-cols-sm-2">
+    
+                <div class="col Product-icon simi">
+                    <a href="" class="Best-product">
+                        <img src="img/bag-cover.webp">
+                    </a>
+    
+                    <a href="">
+                        <h5>Devigue XXXL Tear Drop</h5>
+                        <span>Tan, Black</span>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i>854
+                            <button class="buy">BUY NOW</button>
+                        </p>
+                    </a>
+                </div>
+    
+                <div class="col Product-icon simi">
+                    <a href="" class="Best-product">
+                        <img src="img/officechair (1).webp">
+                    </a>
+    
+                    <a href="">
+                        <h5>SAVYA HOME Office Chair |</h5>
+                        <span>Red, DIY(Do-it-Yourself)</span>
+                        <p> <i class="fa-solid fa-indian-rupee-sign"></i>7,344
+                            <button class="buy">BUY NOW</button>
+    
+                        </p>
+                    </a>
+                </div>
+    
+                <div class="col Product-icon simi">
+                    <a href="" class="Best-product">
+                        <img src="img/sofa-2.webp">
+                    </a>
+    
+                    <a href="">
+                        <h5>Icush Wooden Well Mounted</h5>
+                        <span>Finish Color-brown , DIY(Do-it-Yourself)</span>
+                        <p> <i class="fa-solid fa-indian-rupee-sign"></i>10,527
+                            <button class="buy">BUY NOW</button>
+                        </p>
+                    </a>
+                </div>
+    
+                <div class="col Product-icon simi">
+                    <a href="" class="Best-product">
+                        <img src="img/bed (4).webp">
+                    </a>
+    
+                    <a href="">
+                        <h5>wo Home Mourya Box Bed</h5>
+                        <span>Finish Color-Waknut,DIY(Do-it-Yourself)</span>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i>45,460
+                            <button class="buy">BUY NOW</button>
+                        </p>
+                    </a>
+                </div>
+    
+                <div class="col Product-icon simi">
+                    <a href="" class="Best-product">
+                        <img src="img/table.webp">
+                    </a>
+    
+                    <a href="">
+                        <h5>Solid 6 Seater Dining Table</h5>
+                        <span>Finish Color-Waknut,DIY(Do-it-Yourself)</span>
+                        <p><i class="fa-solid fa-indian-rupee-sign"></i>26,999
+                            <button class="buy">BUY NOW</button>
+                        </p>
+                    </a>
+                </div>
+    
+            </div>
+        </div>
+    
+        <!-- ***************************** similar products end ****************************-->
+    
+      
+        <!-- ***************************** Footer Section Start *************************** -->
+        <div class="container-fluid" id="footer">
+            <div class="row">
+    
+                <div class=" col footer-text">
+                    <ul style="list-style: none;">
+                        <th>Contact Us</th>
+                        <li>Phone: 09544644999</li>
+                        <li>Need help or have a question?</li>
+                        <li>Contact us at: ingo@rotalfurniturnitureonline.in</li>
+                        <li>Royal tower Areacode Road, Mukkam, Calicut,, Kozhikode (Calicut),India,673602</li>
+                    </ul>
+                </div>
+    
+                <div class="col footer-text">
+                    <ul>
+                        <th>Company</th>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="location.html">Store Locations</a></li>
+                        <li><a href="signup.html">SignUp...............................................</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col footer-text">
+                    <ul>
+                        <th>Infomation</th>
+                        <li><a href="delifry.html">Delivery Information</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="Refund.html">Refund & Cancellation Policy</a></li>
+                    </ul>
+                </div>
+    
+                <div class="col-12 footer-text1">
+                    <ul style="list-style: none;">
+                        <li class="footer-link">
+                            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://about.twitter.com/en"><i class="fa-brands fa-twitter"></i></a>
+                            <small> Copyright © 2023 - longshore ventures INC</small>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <!-- ***************************** Footer Section end *************************** -->
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
