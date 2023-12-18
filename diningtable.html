@@ -16,15 +16,9 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <script type="text/javascript">
-        $(function () {
-            $('#mytab a').on('click', function (e) {
-                e.preventDefault();
-                $(this).tab('show');
-            })
-        }
-        )
-    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <script src="js/BDOC.js"></script>
 
 </head>
 
@@ -243,16 +237,16 @@
         <div class="row py-5">
             <div class="col-3" id="bedroom">
                 <ul class="nav nav-pills flex-column" id="mytab-1">
-                    <h 5>Filters</h5>
+                    <h5 id="name-anim">Filters</h5>
                         <hr>
 
 
                         <li class="nav-item">
-                            <a class="dropdown-toggle product-button active" data-bs-toggle="pill" href="#home">Dining
+                            <a class="dropdown-toggle product-button active" data-bs-toggle="pill" href="#home" id="name-anim1">Dining
                                 Tables & Sets
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item" id="name-anim2">
                             <a class="dropdown-toggle" data-bs-toggle="pill" href="#s">Furniture</a>
 
                         </li>
@@ -260,13 +254,13 @@
                         <!-- *************** Price ************* -->
 
                         <li class="price-text">
-                            <label for="customRange1" class="form-label">PRICE</label>
+                            <label for="customRange1" class="form-label" id="name-anim3">PRICE</label>
                             <input type="range" class="form-range" id="customRange1">
 
 
                             <div class="btn-group">
                                 <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    data-bs-toggle="dropdown" aria-expanded="false" id="name-anim4">
                                     Min.
                                 </button>
                                 <ul class="dropdown-menu">
@@ -279,12 +273,12 @@
                                 </ul>
                             </div>
 
-                            <span>To</span>
+                            <span id="name-anim5">To</span>
 
 
                             <div class="btn-group min-price">
                                 <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    data-bs-toggle="dropdown" aria-expanded="false" id="name-anim6">
                                     3000 <i class="fa-solid fa-plus"></i>
                                 </button>
                                 <ul class="dropdown-menu">
@@ -304,7 +298,7 @@
                             <div class="btn-group">
                                 <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    <samp> BRAND</samp>
+                                    <samp id="name-anim7"> BRAND</samp>
                                 </button>
 
                                 <ul class="dropdown-menu">
@@ -360,7 +354,7 @@
                             <div class="btn-group">
                                 <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    <samp> OFFERS</samp>
+                                    <samp id="name-anim8"> OFFERS</samp>
                                 </button>
 
                                 <ul class="dropdown-menu">
@@ -397,7 +391,7 @@
                             <div class="btn-group">
                                 <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    <samp> CUSTOMER RATINGS</samp>
+                                    <samp id="name-anim01">CUSTOMER RATINGS</samp>
                                 </button>
 
                                 <ul class="dropdown-menu">
@@ -426,7 +420,7 @@
                             <div class="btn-group">
                                 <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    <samp>DISCOUNT</samp>
+                                    <samp id="name-anim02">DISCOUNT</samp>
                                 </button>
 
                                 <ul class="dropdown-menu">
@@ -483,7 +477,7 @@
                             <div class="btn-group">
                                 <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    <samp> AVAILABILITY</samp>
+                                    <samp id="name-anim03"> AVAILABILITY</samp>
                                 </button>
 
                                 <ul class="dropdown-menu">
@@ -506,7 +500,7 @@
                                 <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
 
-                                    <samp>GST INVOICE AVAILABLE</samp>
+                                    <samp id="name-anim04">GST INVOICE AVAILABLE</samp>
                                 </button>
 
                                 <ul class="dropdown-menu">
