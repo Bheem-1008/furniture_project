@@ -14,9 +14,11 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <script src="js/contact.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <script src="js/contact.js"></script>
 
 </head>
 
@@ -220,16 +222,16 @@
 
     <!-- *************************** Header Section end *********************** -->
     <br><br><br>
-    <h1>Contact Us</h1>
+    <h1 id="conatact-anim">Contact Us</h1>
 
-    <div class="banner-contact">
+    <div class="banner-contact" id="pro-animate4">
         <img src="img/contact-hero-2@2x.jpg">
     </div>
 
     <!--******************* contact start **************************  -->
     <div class="container " id="contact">
         <div class="row row-cols-lg-2 row-cols-sm-2">
-            <div class="container">
+            <div class="container" >
                 <div class="row row-cols-lg-1">
 
                     <div class="col" id="name-anim">
@@ -238,13 +240,13 @@
                         <p>Royal tower Areacode Road, Mukkam, <br> Calicut,, Kozhikode (Calicut), India, 673602</p>
                     </div>
 
-                    <div class="col">
+                    <div class="col" id="name-anim1">
                         <i class="fa-solid fa-envelope"></i>
                         <span>Email Address​</span>
                         <p>info@royalfurnitureonline.in</p>
                     </div>
 
-                    <div class="col">
+                    <div class="col" id="name-anim2">
                         <i class="fa-solid fa-phone"></i>
                         <span>Phone Numbers​</span>
                         <p>095446 44000</p>
@@ -253,8 +255,8 @@
             </div>
 
             <div class="container form-contact">
-                <h2>Send us a message</h2>
-            <form method="post" class="cont">
+                <h2 id="name-anim3">Send us a message</h2>
+            <form method="post" class="cont" id="name-anim4">
                 <input class="contact-f" type="name" name="name" placeholder=" Name*" required>
                 <input class="contact-f" type="email" name="email" placeholder=" Email Address*" required>
                 <input class="contact-f" type="subject" name="subject" placeholder=" Subject*" required>
@@ -275,10 +277,10 @@
 
 
      <div class="container-fluid" id="similar">
-        <div class="div" id="pro-animate4"><h2>More to Discover</h2></div>
+        <div class="div" id="pro-animate4"><h2 id="disco">More to Discover</h2></div>
         <div class="row row-cols-lg-5 row-cols-sm-2">
 
-            <div class="col Product-icon simi">
+            <div class="col Product-icon simi" id="disco1">
                 <a href="" class="Best-product">
                     <img src="img/bag-cover.webp">
                 </a>
@@ -292,7 +294,7 @@
                 </a>
             </div>
 
-            <div class="col Product-icon simi">
+            <div class="col Product-icon simi" id="disco2">
                 <a href="officebuy.html" class="Best-product">
                     <img src="img/officechair (1).webp">
                 </a>
@@ -307,7 +309,7 @@
                 </a>
             </div>
 
-            <div class="col Product-icon simi">
+            <div class="col Product-icon simi" id="disco3">
                 <a href="best-sofa-2.html" class="Best-product">
                     <img src="img/sofa-style (2).webp">
                 </a>
@@ -321,7 +323,7 @@
                 </a>
             </div>
 
-            <div class="col Product-icon simi">
+            <div class="col Product-icon simi" id="disco4">
                 <a href="bedroombuy.html" class="Best-product">
                     <img src="img/bed (4).webp">
                 </a>
@@ -335,7 +337,7 @@
                 </a>
             </div>
 
-            <div class="col Product-icon simi">
+            <div class="col Product-icon simi" id="disco5">
                 <a href="" class="Best-product">
                     <img src="img/table.webp">
                 </a>
@@ -359,7 +361,7 @@
     <div class="container-fluid" id="footer">
         <div class="row">
 
-            <div class=" col footer-text">
+            <div class=" col footer-text" id="footer-anim1">
                 <ul style="list-style: none;">
                     <th>Contact Us</th>
                     <li>Phone: 09544644999</li>
@@ -369,7 +371,7 @@
                 </ul>
             </div>
 
-            <div class="col footer-text">
+            <div class="col footer-text" id="footer-anim2">
                 <ul>
                     <th>Company</th>
                     <li><a href="about.html">About Us</a></li>
@@ -379,7 +381,7 @@
                 </ul>
             </div>
 
-            <div class="col footer-text">
+            <div class="col footer-text" id="footer-anim3">
                 <ul>
                     <th>Infomation</th>
                     <li><a href="delifry.html">Delivery Information</a></li>
@@ -389,7 +391,7 @@
                 </ul>
             </div>
 
-            <div class="col-12 footer-text1">
+            <div class="col-12 footer-text1" id="footer-anim4">
                 <ul style="list-style: none;">
                     <li class="footer-link">
                         <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
