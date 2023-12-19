@@ -13,18 +13,12 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <script type="text/javascript">
-        $(function () {
-            $('#mytab a').on('click', function (e) {
-                e.preventDefault();
-                $(this).tab('show');
-            })
-        }
-        )
-    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <script src="js/BDOC.js"></script>
+
 
 </head>
 
@@ -246,287 +240,287 @@
         <div class="row py-5">
             <div class="col-3" id="bedroom">
                 <ul class="nav nav-pills flex-column" id="mytab-1">
-                    <h 5>Filters</h5>
-                        <hr>
+                    <h5 id="name-anim">Filters</h5>
+                    <hr>
 
 
-                        <li class="nav-item">
-                            <a class="dropdown-toggle product-button active" data-bs-toggle="pill" href="#home">Office
-                                Chair
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="dropdown-toggle" data-bs-toggle="pill" href="#Wallpapers">Furniture</a>
+                    <li class="nav-item">
+                        <a class="dropdown-toggle product-button active" data-bs-toggle="pill" href="#home" id="name-anim1">Office
+                            Chair
+                        </a>
+                    </li>
+                    <li class="nav-item" id="name-anim2">
+                        <a class="dropdown-toggle" data-bs-toggle="pill" href="#Wallpapers">Furniture</a>
 
-                        </li>
+                    </li>
 
-                        <!-- *************** Price ************* -->
+                    <!-- *************** Price ************* -->
 
-                        <li class="price-text">
-                            <label for="customRange1" class="form-label">PRICE</label>
-                            <input type="range" class="form-range" id="customRange1">
-
-
-                            <div class="btn-group">
-                                <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Min.
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Min</a></li>
-                                    <li><a class="dropdown-item" href="#">500</a></li>
-                                    <li><a class="dropdown-item" href="#">1000</a></li>
-                                    <li><a class="dropdown-item" href="#">2000</a></li>
-                                    <li><a class="dropdown-item" href="#">4000</a></li>
-                                    <li><a class="dropdown-item" href="#">6000</a></li>
-                                </ul>
-                            </div>
-
-                            <span>To</span>
+                    <li class="price-text">
+                        <label for="customRange1" class="form-label" id="name-anim3">PRICE</label>
+                        <input type="range" class="form-range" id="customRange1" id="name-anim4">
 
 
-                            <div class="btn-group min-price">
-                                <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    3000 <i class="fa-solid fa-plus"></i>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">200</a></li>
-                                    <li><a class="dropdown-item" href="#">500</a></li>
-                                    <li><a class="dropdown-item" href="#">1000</a></li>
-                                    <li><a class="dropdown-item" href="#">2000</a></li>
-                                    <li><a class="dropdown-item" href="#">4000</a></li>
-                                    <li><a class="dropdown-item" href="#">6000</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <!-- *************** Price end ************* -->
-                        <br>
-                        <!-- *************** brand  ************* -->
-                        <li>
-                            <div class="btn-group">
-                                <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <samp> BRAND</samp>
-                                </button>
+                        <div class="btn-group">
+                            <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" id="name-anim5">
+                                Min.
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Min</a></li>
+                                <li><a class="dropdown-item" href="#">500</a></li>
+                                <li><a class="dropdown-item" href="#">1000</a></li>
+                                <li><a class="dropdown-item" href="#">2000</a></li>
+                                <li><a class="dropdown-item" href="#">4000</a></li>
+                                <li><a class="dropdown-item" href="#">6000</a></li>
+                            </ul>
+                        </div>
 
-                                <ul class="dropdown-menu">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                        <label class="form-check-label" for="defaultCheck1">
-                                            24x7emall
-                                        </label>
-                                    </div>
+                        <span id="name-anim6">To</span>
 
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                        <label class="form-check-label" for="defaultCheck1">
-                                            3D INDIA
-                                        </label>
-                                    </div>
 
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                        <label class="form-check-label" for="defaultCheck1">
-                                            A ONE SHOPPE
-                                        </label>
-                                    </div>
+                        <div class="btn-group min-price">
+                            <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" id="name-anim7">
+                                3000 <i class="fa-solid fa-plus"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">200</a></li>
+                                <li><a class="dropdown-item" href="#">500</a></li>
+                                <li><a class="dropdown-item" href="#">1000</a></li>
+                                <li><a class="dropdown-item" href="#">2000</a></li>
+                                <li><a class="dropdown-item" href="#">4000</a></li>
+                                <li><a class="dropdown-item" href="#">6000</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- *************** Price end ************* -->
+                    <br>
+                    <!-- *************** brand  ************* -->
+                    <li>
+                        <div class="btn-group">
+                            <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <samp id="name-anim8"> BRAND</samp>
+                            </button>
 
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                        <label class="form-check-label" for="defaultCheck1">
-                                            A Walls Dream
-                                        </label>
-                                    </div>
+                            <ul class="dropdown-menu">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        24x7emall
+                                    </label>
+                                </div>
 
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                        <label class="form-check-label" for="defaultCheck1">
-                                            Luxury
-                                        </label>
-                                    </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        3D INDIA
+                                    </label>
+                                </div>
 
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                        <label class="form-check-label" for="defaultCheck1">
-                                            Adonai
-                                        </label>
-                                    </div>
-                                </ul>
-                            </div>
-                        </li>
-                        <!-- *************** Brand end************* -->
-                        <!-- <hr> -->
-                        <!-- *************** offers ************* -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        A ONE SHOPPE
+                                    </label>
+                                </div>
 
-                        <li>
-                            <div class="btn-group">
-                                <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <samp> OFFERS</samp>
-                                </button>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        A Walls Dream
+                                    </label>
+                                </div>
 
-                                <ul class="dropdown-menu">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                        <label class="form-check-label" for="defaultCheck1">
-                                            No Cost EMI
-                                        </label>
-                                    </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Luxury
+                                    </label>
+                                </div>
 
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                        <label class="form-check-label" for="defaultCheck1">
-                                            Sprecia Price
-                                        </label>
-                                    </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Adonai
+                                    </label>
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- *************** Brand end************* -->
+                    <!-- <hr> -->
+                    <!-- *************** offers ************* -->
 
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                        <label class="form-check-label" for="defaultCheck1">
-                                            Buy More ,Save More
-                                        </label>
-                                    </div>
+                    <li>
+                        <div class="btn-group">
+                            <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <samp id="name-anim9"> OFFERS</samp>
+                            </button>
 
-                                </ul>
-                            </div>
-                        </li>
+                            <ul class="dropdown-menu">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        No Cost EMI
+                                    </label>
+                                </div>
 
-                        <!-- *************** offers ************* -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Sprecia Price
+                                    </label>
+                                </div>
 
-                        <hr>
-                        <!-- *************** ratings ************* -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Buy More ,Save More
+                                    </label>
+                                </div>
 
-                        <li>
-                            <div class="btn-group">
-                                <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <samp> CUSTOMER RATINGS</samp>
-                                </button>
+                            </ul>
+                        </div>
+                    </li>
 
-                                <ul class="dropdown-menu">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                        <label class="form-check-label" for="defaultCheck1">
-                                            4 <i class="fa-solid fa-star"></i> & above
-                                        </label>
-                                    </div>
+                    <!-- *************** offers ************* -->
 
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                        <label class="form-check-label" for="defaultCheck1">
-                                            3 <i class="fa-solid fa-star"></i> & above
-                                        </label>
-                                    </div>
+                    <hr>
+                    <!-- *************** ratings ************* -->
 
-                                </ul>
-                            </div>
-                        </li>
-                        <!-- *************** ratings ************* -->
+                    <li>
+                        <div class="btn-group">
+                            <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <samp id="name-anim01"> CUSTOMER RATINGS</samp>
+                            </button>
 
-                        <hr>
-                        <!-- *************** discount ************* -->
+                            <ul class="dropdown-menu">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        4 <i class="fa-solid fa-star"></i> & above
+                                    </label>
+                                </div>
 
-                        <li>
-                            <div class="btn-group">
-                                <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <samp>DISCOUNT</samp>
-                                </button>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        3 <i class="fa-solid fa-star"></i> & above
+                                    </label>
+                                </div>
 
-                                <ul class="dropdown-menu">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                        <label class="form-check-label" for="defaultCheck1">
-                                            80% or more
-                                        </label>
-                                    </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- *************** ratings ************* -->
 
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                        <label class="form-check-label" for="defaultCheck1">
-                                            70% or more
-                                        </label>
-                                    </div>
+                    <hr>
+                    <!-- *************** discount ************* -->
 
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                        <label class="form-check-label" for="defaultCheck1">
-                                            60% or more
-                                        </label>
-                                    </div>
+                    <li>
+                        <div class="btn-group">
+                            <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <samp id="name-anim02">DISCOUNT</samp>
+                            </button>
 
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                        <label class="form-check-label" for="defaultCheck1">
-                                            50% or more
-                                        </label>
-                                    </div>
+                            <ul class="dropdown-menu">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        80% or more
+                                    </label>
+                                </div>
 
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                        <label class="form-check-label" for="defaultCheck1">
-                                            40% or more
-                                        </label>
-                                    </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        70% or more
+                                    </label>
+                                </div>
 
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                        <label class="form-check-label" for="defaultCheck1">
-                                            No Free
-                                        </label>
-                                    </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        60% or more
+                                    </label>
+                                </div>
 
-                                </ul>
-                            </div>
-                        </li>
-                        <!-- *************** discount end ************* -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        50% or more
+                                    </label>
+                                </div>
 
-                        <hr>
-                        <!-- *************** avalilatlity ************* -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        40% or more
+                                    </label>
+                                </div>
 
-                        <li>
-                            <div class="btn-group">
-                                <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <samp> AVAILABILITY</samp>
-                                </button>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        No Free
+                                    </label>
+                                </div>
 
-                                <ul class="dropdown-menu">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                        <label class="form-check-label" for="defaultCheck1">
-                                            Inlide Out of Stock
-                                        </label>
-                                    </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- *************** discount end ************* -->
 
-                                </ul>
-                            </div>
-                        </li>
-                        <!-- *************** avalilatlity  end************* -->
+                    <hr>
+                    <!-- *************** avalilatlity ************* -->
 
-                        <hr>
-                        <!-- *************** GST ************* -->
+                    <li>
+                        <div class="btn-group">
+                            <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <samp id="name-anim03"> AVAILABILITY</samp>
+                            </button>
 
-                        <li>
-                            <div class="btn-group">
-                                <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                            <ul class="dropdown-menu">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Inlide Out of Stock
+                                    </label>
+                                </div>
 
-                                    <samp>GST INVOICE AVAILABLE</samp>
-                                </button>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- *************** avalilatlity  end************* -->
 
-                                <ul class="dropdown-menu">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                        <label class="form-check-label" for="defaultCheck1">
-                                            GST Invoice Available
-                                        </label>
-                                    </div>
-                                </ul>
-                            </div>
-                        </li>
-                        <!-- *************** GST end ************* -->
+                    <hr>
+                    <!-- *************** GST ************* -->
+
+                    <li>
+                        <div class="btn-group">
+                            <button class="btn bg-gradient btn-sm dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+
+                                <samp id="name-anim04">GST INVOICE AVAILABLE</samp>
+                            </button>
+
+                            <ul class="dropdown-menu">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        GST Invoice Available
+                                    </label>
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- *************** GST end ************* -->
                 </ul>
             </div>
 
@@ -536,7 +530,7 @@
                 <div id="home" class="container tab-pane fade show active fur-text">
                     <div class="row row-cols-lg-4">
 
-                        <div class="col Product-icon">
+                        <div class="col Product-icon" id="pro-animate">
                             <a href="officebuy.html" class="Best-product">
                                 <img src="img/officechair (1).webp">
                             </a>
@@ -550,7 +544,7 @@
                             </a>
                         </div>
 
-                        <div class="col Product-icon">
+                        <div class="col Product-icon" id="pro-animate1">
                             <a href="" class="Best-product">
                                 <img src="img/officechair (2).webp">
                             </a>
@@ -564,7 +558,7 @@
                             </a>
                         </div>
 
-                        <div class="col Product-icon">
+                        <div class="col Product-icon" id="pro-animate2">
                             <a href="" class="Best-product">
                                 <img src="img/officechair (3).webp">
                             </a>
@@ -578,7 +572,7 @@
                             </a>
                         </div>
 
-                        <div class="col Product-icon">
+                        <div class="col Product-icon" id="pro-animate3">
                             <a href="" class="Best-product">
                                 <img src="img/officechair (4).webp">
                             </a>
@@ -592,7 +586,8 @@
                             </a>
                         </div>
 
-                        <div class="col Product-icon">
+                        <!-- second row -->
+                        <div class="col Product-icon" id="pro-animate4">
                             <a href="" class="Best-product">
                                 <img src="img/officechair (5).webp">
                             </a>
@@ -606,7 +601,7 @@
                             </a>
                         </div>
 
-                        <div class="col Product-icon">
+                        <div class="col Product-icon" id="pro-animate5">
                             <a href="" class="Best-product">
                                 <img src="img/officechair (6).webp">
                             </a>
@@ -620,7 +615,7 @@
                             </a>
                         </div>
 
-                        <div class="col Product-icon">
+                        <div class="col Product-icon" id="pro-animate6">
                             <a href="" class="Best-product">
                                 <img src="img/officechair (7).webp">
                             </a>
@@ -634,7 +629,7 @@
                             </a>
                         </div>
 
-                        <div class="col Product-icon">
+                        <div class="col Product-icon" id="pro-animate7">
                             <a href="" class="Best-product">
                                 <img src="img/officechair (8).webp">
                             </a>
@@ -647,7 +642,9 @@
                                 </p>
                             </a>
                         </div>
-                        <div class="col Product-icon">
+
+                        <!-- theardh row -->
+                        <div class="col Product-icon" id="pro-animate8">
                             <a href="officebuy.html" class="Best-product">
                                 <img src="img/officechair (1).webp">
                             </a>
@@ -661,7 +658,7 @@
                             </a>
                         </div>
 
-                        <div class="col Product-icon">
+                        <div class="col Product-icon" id="pro-animate9">
                             <a href="" class="Best-product">
                                 <img src="img/officechair (2).webp">
                             </a>
@@ -675,7 +672,7 @@
                             </a>
                         </div>
 
-                        <div class="col Product-icon">
+                        <div class="col Product-icon" id="pro-animate01">
                             <a href="" class="Best-product">
                                 <img src="img/officechair (3).webp">
                             </a>
@@ -689,7 +686,7 @@
                             </a>
                         </div>
 
-                        <div class="col Product-icon">
+                        <div class="col Product-icon" id="pro-animate02">
                             <a href="" class="Best-product">
                                 <img src="img/officechair (4).webp">
                             </a>
@@ -703,7 +700,8 @@
                             </a>
                         </div>
 
-                        <div class="col Product-icon">
+                        <!-- fourth row -->
+                        <div class="col Product-icon" id="pro-animate03">
                             <a href="" class="Best-product">
                                 <img src="img/officechair (5).webp">
                             </a>
@@ -717,7 +715,7 @@
                             </a>
                         </div>
 
-                        <div class="col Product-icon">
+                        <div class="col Product-icon" id="pro-animate04">
                             <a href="" class="Best-product">
                                 <img src="img/officechair (6).webp">
                             </a>
@@ -731,7 +729,7 @@
                             </a>
                         </div>
 
-                        <div class="col Product-icon">
+                        <div class="col Product-icon" id="pro-animate05"> 
                             <a href="" class="Best-product">
                                 <img src="img/officechair (7).webp">
                             </a>
@@ -745,7 +743,7 @@
                             </a>
                         </div>
 
-                        <div class="col Product-icon">
+                        <div class="col Product-icon" id="pro-animate06">
                             <a href="" class="Best-product">
                                 <img src="img/officechair (8).webp">
                             </a>
@@ -758,7 +756,8 @@
                                 </p>
                             </a>
                         </div>
-                        <div class="col Product-icon">
+                        <!-- five row -->
+                        <div class="col Product-icon" id="pro-animate07">
                             <a href="officebuy.html" class="Best-product">
                                 <img src="img/officechair (1).webp">
                             </a>
@@ -772,7 +771,7 @@
                             </a>
                         </div>
 
-                        <div class="col Product-icon">
+                        <div class="col Product-icon" id="pro-animate08">
                             <a href="" class="Best-product">
                                 <img src="img/officechair (2).webp">
                             </a>
@@ -786,7 +785,7 @@
                             </a>
                         </div>
 
-                        <div class="col Product-icon">
+                        <div class="col Product-icon" id="pro-animate09">
                             <a href="" class="Best-product">
                                 <img src="img/officechair (3).webp">
                             </a>
@@ -800,7 +799,7 @@
                             </a>
                         </div>
 
-                        <div class="col Product-icon">
+                        <div class="col Product-icon" id="pro-animate001">
                             <a href="" class="Best-product">
                                 <img src="img/officechair (4).webp">
                             </a>
@@ -814,63 +813,8 @@
                             </a>
                         </div>
 
-                        <div class="col Product-icon">
-                            <a href="" class="Best-product">
-                                <img src="img/officechair (5).webp">
-                            </a>
-
-                            <a href="">
-                                <h5>VIZOLT Mesh Office Adjustable Arm Chair </h5>
-                                <span>Black ,Diy(Do-it-Yourself)</span>
-                                <p><i class="fa-solid fa-indian-rupee-sign"></i>3,207
-                                    <button class="buy">BUY NOW</button>
-                                </p>
-                            </a>
-                        </div>
-
-                        <div class="col Product-icon">
-                            <a href="" class="Best-product">
-                                <img src="img/officechair (6).webp">
-                            </a>
-
-                            <a href="">
-                                <h5>SAVYA HOME DELTA Fabric Office Executive Chair</h5>
-                                <span>Finish Color-Wenge,DIY(Do-it-Yourself)</span>
-                                <p><i class="fa-solid fa-indian-rupee-sign"></i>2,799
-                                    <button class="buy">BUY NOW</button>
-                                </p>
-                            </a>
-                        </div>
-
-                        <div class="col Product-icon">
-                            <a href="" class="Best-product">
-                                <img src="img/officechair (7).webp">
-                            </a>
-
-                            <a href="">
-                                <h5>Trevi Venus Magic Mesh Office Executive chair</h5>
-                                <span>Grey,Black,DIY(Do-it-Yourself)</span>
-                                <p><i class="fa-solid fa-indian-rupee-sign"></i>4,390
-                                    <button class="buy">BUY NOW</button>
-                                </p>
-                            </a>
-                        </div>
-
-                        <div class="col Product-icon">
-                            <a href="" class="Best-product">
-                                <img src="img/officechair (8).webp">
-                            </a>
-
-                            <a href="">
-                                <h5>Beaatho Veroma Mid Back Study Metal Base Nylon Mesh Re..</h5>
-                                <span>Green, Diy(Do-it)</span>
-                                <p><i class="fa-solid fa-indian-rupee-sign"></i>3,343
-                                    <button class="buy">BUY NOW</button>
-                                </p>
-                            </a>
-                        </div>
+                       
                     </div>
-
                 </div>
 
                 <!-- ##################################### office chsir end *******************-->
@@ -1173,12 +1117,12 @@
 
     <div class="container-fluid" id="similar">
         <div class="div">
-            <h2>More to Discover</h2>
+            <h2 id="disco">More to Discover</h2>
         </div>
 
         <div class="row row-cols-lg-5 row-cols-sm-2">
 
-            <div class="col Product-icon simi">
+            <div class="col Product-icon simi" id="disco1">
                 <a href="" class="Best-product">
                     <img src="img/officechair (5).webp">
                 </a>
@@ -1192,7 +1136,7 @@
                 </a>
             </div>
 
-            <div class="col Product-icon simi">
+            <div class="col Product-icon simi" id="disco2">
                 <a href="" class="Best-product">
                     <img src="img/officechair (7).webp">
                 </a>
@@ -1206,7 +1150,7 @@
                 </a>
             </div>
 
-            <div class="col Product-icon simi">
+            <div class="col Product-icon simi" id="disco3">
                 <a href="" class="Best-product">
                     <img src="img/officechair (3).webp">
                 </a>
@@ -1220,7 +1164,7 @@
                 </a>
             </div>
 
-            <div class="col Product-icon simi">
+            <div class="col Product-icon simi" id="disco4">
                 <a href="" class="Best-product">
                     <img src="img/officechair (4).webp">
                 </a>
@@ -1234,7 +1178,7 @@
                 </a>
             </div>
 
-            <div class="col Product-icon simi">
+            <div class="col Product-icon simi" id="disco5">
                 <a href="" class="Best-product">
                     <img src="img/chear.png">
                 </a>
@@ -1259,7 +1203,7 @@
     <div class="container-fluid" id="footer">
         <div class="row">
 
-            <div class=" col footer-text">
+            <div class=" col footer-text" id="footer-anim1">
                 <ul style="list-style: none;">
                     <th>Contact Us</th>
                     <li>Phone: 09544644999</li>
@@ -1269,7 +1213,7 @@
                 </ul>
             </div>
 
-            <div class="col footer-text">
+            <div class="col footer-text" id="footer-anim2">
                 <ul>
                     <th>Company</th>
                     <li><a href="about.html">About Us</a></li>
@@ -1279,7 +1223,7 @@
                 </ul>
             </div>
 
-            <div class="col footer-text">
+            <div class="col footer-text" id="footer-anim3">
                 <ul>
                     <th>Infomation</th>
                     <li><a href="delifry.html">Delivery Information</a></li>
@@ -1289,7 +1233,7 @@
                 </ul>
             </div>
 
-            <div class="col-12 footer-text1">
+            <div class="col-12 footer-text1" id="footer-anim4">
                 <ul style="list-style: none;">
                     <li class="footer-link">
                         <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>

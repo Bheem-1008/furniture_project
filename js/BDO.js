@@ -39,7 +39,7 @@ $(document).ready(() => {
             $('#name-anim02').addClass('animate__animated animate__fadeIn')
             $('#name-anim03').addClass('animate__animated animate__fadeIn')
             $('#name-anim04').addClass('animate__animated animate__fadeIn')
-           
+
             // right
             $('#pro-animate4').addClass('animate__animated animate__zoomIn');
             $('#pro-animate5').addClass('animate__animated animate__zoomIn');
@@ -54,14 +54,14 @@ $(document).ready(() => {
             $('#pro-animate01').addClass('animate__animated animate__zoomIn');
             $('#pro-animate02').addClass('animate__animated animate__fadeInRight');
         }
-        //fourth animation 
+        //four animation 
         else if ((furniture > 1500) && (furniture < 1600)) {
             $('#pro-animate03').addClass('animate__animated animate__zoomIn');
             $('#pro-animate04').addClass('animate__animated animate__zoomIn');
             $('#pro-animate05').addClass('animate__animated animate__zoomIn');
             $('#pro-animate06').addClass('animate__animated animate__fadeInRight');
         }
-     
+
         // five row
         else if ((furniture > 1920) && (furniture < 2000)) {
             $('#pro-animate07').addClass('animate__animated animate__zoomIn');
@@ -69,6 +69,7 @@ $(document).ready(() => {
             $('#pro-animate09').addClass('animate__animated animate__zoomIn');
             $('#pro-animate001').addClass('animate__animated animate__fadeInRight');
         }
+        //discover
         else if ((furniture > 2420) && (furniture < 2600)) {
             $('#disco').addClass('animate__animated animate__zoomIn');
             $('#disco1').addClass('animate__animated animate__fadeInLeft');
